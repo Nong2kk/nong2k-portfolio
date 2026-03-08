@@ -3,10 +3,10 @@ import { Reveal } from "../ui/Reveal";
 
 const certifications = [
   {
-    title: "Digital Marketing Strategy Certificate",
-    issuer: "Google / Coursera",
-    year: "2023",
-    description: "Chiến lược digital marketing tổng thể, bao gồm SEO, quảng cáo trực tuyến, phân tích dữ liệu và lập kế hoạch campaign.",
+    title: "SEO Content Practice Certificate",
+    issuer: "FPT Polytechnic",
+    year: "2024",
+    description: "Khóa học thực hành xây dựng nội dung chuẩn SEO, nghiên cứu từ khóa, tối ưu Search Intent và triển khai bài viết tối ưu cho công cụ tìm kiếm.",
     url: "https://xuongthuchanh.poly.edu.vn/certificate/PS29378/65e7dd734816ab157729d7a7"
   },
   {
