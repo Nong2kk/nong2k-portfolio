@@ -94,15 +94,23 @@ export function Hero() {
               className="absolute w-[340px] h-[340px] rounded-full border border-primary/20 border-dashed"
             />
 
-            {/* Rotating conic-gradient border ring */}
-            <div
-              className="avatar-conic-ring relative"
-              style={{ width: 268, height: 268, padding: 3 }}
-            >
-              {/* Static image container — background masks the conic fill behind the photo */}
+            {/* Avatar stack: ring + image as independent sibling layers */}
+            <div className="relative" style={{ width: 268, height: 268 }}>
+              {/* Layer 1 — rotating conic-gradient ring (spins freely) */}
               <div
-                className="w-full h-full rounded-full overflow-hidden"
-                style={{ background: "hsl(var(--background))" }}
+                className="avatar-conic-ring absolute inset-0 rounded-full"
+                style={{
+                  boxShadow: "0 0 36px 4px rgba(0,240,255,0.28), 0 0 72px 8px rgba(96,165,250,0.14)",
+                }}
+              />
+
+              {/* Layer 2 — static image (does NOT rotate, sits on top of ring) */}
+              <div
+                className="absolute rounded-full overflow-hidden"
+                style={{
+                  inset: 3,
+                  background: "hsl(var(--background))",
+                }}
               >
                 <img
                   src={profileImg}
@@ -112,16 +120,6 @@ export function Hero() {
                 />
               </div>
             </div>
-
-            {/* Glow halo sitting behind the ring */}
-            <div
-              className="absolute rounded-full pointer-events-none"
-              style={{
-                width: 268,
-                height: 268,
-                boxShadow: "0 0 40px 6px rgba(0,240,255,0.30), 0 0 80px 10px rgba(96,165,250,0.15)",
-              }}
-            />
 
             {/* Floating status badge */}
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
