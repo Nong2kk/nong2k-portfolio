@@ -1,6 +1,7 @@
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import { motion } from "framer-motion";
+import profileImg from "@assets/nong_1773005617399.jpg";
 
 const stats = [
   { value: "2+", label: "Năm kinh nghiệm" },
@@ -19,6 +20,7 @@ export function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 items-center">
+        {/* Left: Text Content */}
         <div className="max-w-3xl">
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6" data-testid="badge-availability">
@@ -76,31 +78,45 @@ export function Hero() {
           </Reveal>
         </div>
 
-        {/* Abstract Hero Visual */}
-        <Reveal delay={0.2} direction="left" className="hidden lg:block">
-          <div className="relative w-full aspect-square">
+        {/* Right: Profile Photo */}
+        <Reveal delay={0.25} direction="left" className="hidden lg:flex items-center justify-center">
+          <div className="relative w-full max-w-sm mx-auto">
+            {/* Outer spinning ring */}
             <motion.div
               animate={{ rotate: 360 }}
-              transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-              className="absolute inset-0 rounded-full border border-primary/20 border-dashed"
+              transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+              className="absolute -inset-6 rounded-full border border-primary/20 border-dashed"
             />
+            {/* Inner spinning ring */}
             <motion.div
               animate={{ rotate: -360 }}
-              transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-              className="absolute inset-8 rounded-full border border-secondary/20 border-dashed"
+              transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+              className="absolute -inset-2 rounded-full border border-secondary/15 border-dashed"
             />
-            <div className="absolute inset-16 glass-card rounded-full flex items-center justify-center overflow-hidden">
-              <div className="grid grid-cols-2 gap-4 p-8 w-full h-full opacity-50">
-                <div className="bg-primary/20 rounded-tl-full h-full w-full" />
-                <div className="bg-secondary/20 rounded-tr-full h-full w-full" />
-                <div className="bg-[#60A5FA]/20 rounded-bl-full h-full w-full" />
-                <div className="bg-primary/10 rounded-br-full h-full w-full" />
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 mx-auto border-[4px] border-primary rounded-full border-t-transparent animate-spin mb-4" style={{ animationDuration: '3s' }} />
-                  <p className="font-display font-bold text-xl tracking-widest text-primary">SEO</p>
-                  <p className="text-xs text-muted-foreground uppercase tracking-widest mt-1">Data Driven</p>
+
+            {/* Glow behind photo */}
+            <div className="absolute inset-0 rounded-3xl bg-primary/20 blur-2xl scale-90" />
+
+            {/* Photo frame */}
+            <div className="relative rounded-3xl overflow-hidden border border-primary/30 shadow-2xl shadow-primary/20">
+              <img
+                src={profileImg}
+                alt="Lê Trọng Long – SEO & Digital Marketing Specialist"
+                className="w-full h-full object-cover object-center aspect-[3/4]"
+              />
+              {/* Subtle dark gradient at bottom for text readability */}
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background/80 to-transparent" />
+              {/* Name tag overlay */}
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="glass-card px-4 py-2.5 rounded-xl flex items-center gap-3">
+                  <div className="relative flex h-2 w-2 shrink-0">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-foreground leading-tight">Lê Trọng Long</p>
+                    <p className="text-xs text-muted-foreground">SEO & Digital Marketing</p>
+                  </div>
                 </div>
               </div>
             </div>
