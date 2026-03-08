@@ -28,7 +28,7 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Đang tìm kiếm cơ hội mới
+              Open to Work🤝
             </div>
           </Reveal>
 
@@ -43,7 +43,9 @@ export function Hero() {
 
           <Reveal delay={0.2}>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl" data-testid="hero-description">
-              Chuyên triển khai SEO kỹ thuật, xây dựng chiến lược nội dung theo hướng dữ liệu và tối ưu hiệu suất thương mại điện tử đa kênh. Mình đo lường mọi thứ bằng con số và tối ưu liên tục cho đến khi có kết quả thật.
+              Digital Marketer với hơn 2 năm kinh nghiệm trong SEO, Content Marketing và E-commerce. Có kinh nghiệm xây dựng chiến lược nội dung, nghiên cứu từ khóa và tối ưu website nhằm tăng trưởng organic traffic và hỗ trợ chuyển đổi bán hàng đa kênh.
+
+              Thành thạo GA4, Google Search Console và các công cụ SEO. Luôn cập nhật các thay đổi của Google như Core Update và AI Overview để cải thiện khả năng hiển thị và hiệu quả nội dung.
             </p>
           </Reveal>
 

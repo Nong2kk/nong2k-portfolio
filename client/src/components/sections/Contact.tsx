@@ -25,19 +25,19 @@ const contactInfo = [
   {
     icon: <Phone className="w-5 h-5 text-primary" />,
     label: "Điện thoại",
-    value: "+84 123 456 789",
-    href: "tel:+84123456789"
+    value: "0982319344",
+    href: "tel:+84982319344"
   },
   {
     icon: <Linkedin className="w-5 h-5 text-primary" />,
     label: "LinkedIn",
-    value: "linkedin.com/in/letronglong",
-    href: "https://linkedin.com"
+    value: "www.linkedin.com/in/tronglongledgt",
+    href: "www.linkedin.com/in/tronglongledgt"
   },
   {
     icon: <MapPin className="w-5 h-5 text-primary" />,
-    label: "Địa điểm",
-    value: "Việt Nam",
+    label: "Địa Chỉ",
+    value: "Tân Bình",
     href: null
   },
 ];
