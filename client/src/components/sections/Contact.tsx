@@ -19,8 +19,8 @@ const contactInfo = [
   {
     icon: <Mail className="w-5 h-5 text-primary" />,
     label: "Email",
-    value: "contact@example.com",
-    href: "mailto:contact@example.com"
+    value: "tronglongledgt@gmail.com",
+    href: "mailto:tronglongledgt@gmail.com"
   },
   {
     icon: <Phone className="w-5 h-5 text-primary" />,
