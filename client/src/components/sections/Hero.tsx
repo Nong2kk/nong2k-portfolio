@@ -95,12 +95,12 @@ export function Hero() {
             />
 
             {/* Avatar stack: ring + image as independent sibling layers */}
-            <div className="relative" style={{ width: 268, height: 268 }}>
+            <div className="relative" style={{ width: 316, height: 316 }}>
               {/* Layer 1 — rotating conic-gradient ring (spins freely) */}
               <div
                 className="avatar-conic-ring absolute inset-0 rounded-full"
                 style={{
-                  boxShadow: "0 0 36px 4px rgba(0,240,255,0.28), 0 0 72px 8px rgba(96,165,250,0.14)",
+                  boxShadow: "0 0 42px 6px rgba(0,240,255,0.30), 0 0 84px 12px rgba(96,165,250,0.15)",
                 }}
               />
 
@@ -108,7 +108,7 @@ export function Hero() {
               <div
                 className="absolute rounded-full overflow-hidden"
                 style={{
-                  inset: 3,
+                  inset: 4,
                   background: "hsl(var(--background))",
                 }}
               >
