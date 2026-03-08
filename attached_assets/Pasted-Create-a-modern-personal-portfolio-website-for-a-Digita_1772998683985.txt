@@ -1,0 +1,130 @@
+Create a modern personal portfolio website for a Digital Marketing Specialist focused on SEO and E-commerce.
+
+Person:
+Name: Le Trong Long
+Title: Digital Marketing Specialist (SEO & E-commerce)
+
+Design:
+- Modern minimal design
+- Dark + light professional theme
+- Clean typography
+- Marketing / tech style
+- Smooth scroll animations
+- Responsive mobile-first layout
+
+Sections:
+
+1. Hero Section
+Show name and title:
+"Le Trong Long – Digital Marketing (SEO & E-commerce)"
+
+Short tagline:
+Data-driven SEO specialist focused on growing organic traffic and supporting multi-channel conversions.
+
+Buttons:
+- View Projects
+- Contact Me
+
+2. About Me
+Short professional bio describing:
+- 2 years experience in SEO & E-commerce
+- Experience with topic cluster, semantic SEO and content optimization
+- Data-driven marketing mindset using GA4 and Search Console
+
+3. Skills
+
+SEO Skills:
+- SEO Onpage
+- SEO Offpage
+- Topic Cluster
+- Semantic SEO
+- Local SEO
+- Keyword Research
+
+Marketing Skills:
+- Content Marketing
+- E-commerce Optimization
+- Conversion-focused content
+- UX content optimization
+
+Analytics:
+- Google Analytics 4
+- Google Search Console
+- Data analysis
+
+Tools:
+- Ahrefs
+- SEMrush
+- WordPress
+- Google Tag Manager
+- Canva
+- AI Tools (ChatGPT, Gemini, Perplexity)
+
+4. Projects
+
+Create project cards for:
+
+SEO Website Optimization
+- Keyword research
+- Topic cluster building
+- SEO content writing
+- Traffic growth strategy
+
+E-commerce Optimization
+- Product listing optimization
+- Conversion optimization
+- Multi-channel selling (Shopee, TikTok Shop, Lazada)
+
+SEO Content Strategy
+- Semantic SEO
+- Content audit
+- Internal linking optimization
+
+5. Experience
+
+Marketing Executive
+Hoang Long Vu Company
+
+Responsibilities:
+- Keyword research
+- Topic cluster development
+- SEO Onpage and Offpage
+- Content audit and optimization
+- Internal linking improvement
+- Traffic performance analysis using GA4 and GSC
+
+Marketing Intern
+Kien Xanh Design
+
+Responsibilities:
+- SEO content writing
+- Keyword research
+- UX/UI website optimization
+
+Freelance Project
+Hafu Scented Candles
+
+Responsibilities:
+- E-commerce store optimization
+- Product listing improvement
+- Visual content optimization
+- Conversion support
+
+6. Certifications
+- Digital Marketing Strategy Certificate
+- SEO Optimization Certificate
+
+7. Contact
+Email
+Phone
+LinkedIn
+GitHub (optional)
+
+Technical stack:
+React
+Tailwind CSS
+
+Add:
+- smooth animations
+- project cards
+- modern marketing style UI
