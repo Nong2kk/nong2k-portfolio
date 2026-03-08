@@ -2,20 +2,20 @@ import { Reveal } from "../ui/Reveal";
 
 const skillCategories = [
   {
-    title: "SEO Expertise",
-    skills: ["SEO Onpage", "SEO Offpage", "Topic Cluster", "Semantic SEO", "Local SEO", "Keyword Research"]
+    title: "SEO",
+    skills: ["SEO Onpage", "SEO Offpage", "Topic Cluster", "Semantic SEO", "Local SEO", "Nghiên cứu từ khóa"]
   },
   {
-    title: "Marketing & Strategy",
-    skills: ["Content Marketing", "E-commerce Optimization", "Conversion Content", "UX Optimization"]
+    title: "Digital Marketing",
+    skills: ["Content Marketing", "Tối ưu thương mại điện tử", "Nội dung hướng chuyển đổi", "Tối ưu UX & nội dung"]
   },
   {
-    title: "Analytics",
-    skills: ["Google Analytics 4", "Google Search Console", "Data Analysis", "Reporting"]
+    title: "Phân tích dữ liệu",
+    skills: ["Google Analytics 4", "Google Search Console", "Phân tích dữ liệu", "Báo cáo hiệu suất"]
   },
   {
-    title: "Tools & Technologies",
-    skills: ["Ahrefs", "SEMrush", "WordPress", "Google Tag Manager", "Canva", "ChatGPT", "Gemini"]
+    title: "Công cụ & Nền tảng",
+    skills: ["Ahrefs", "SEMrush", "WordPress", "Google Tag Manager", "Canva", "ChatGPT", "Gemini", "Perplexity"]
   }
 ];
 
@@ -26,11 +26,11 @@ export function Skills() {
         <Reveal>
           <div className="mb-16 md:text-center flex flex-col md:items-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 font-display">
-              Technical <span className="text-gradient">Arsenal</span>
+              Kỹ năng <span className="text-gradient">Chuyên môn</span>
             </h2>
             <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-secondary rounded-full" />
             <p className="text-muted-foreground mt-6 max-w-2xl text-lg">
-              A comprehensive toolkit combining analytical rigor with creative execution.
+              Bộ công cụ và kỹ năng kết hợp tư duy phân tích với khả năng triển khai thực chiến.
             </p>
           </div>
         </Reveal>
@@ -44,7 +44,7 @@ export function Skills() {
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {category.skills.map((skill, sIdx) => (
-                    <span 
+                    <span
                       key={sIdx}
                       className="px-4 py-2 rounded-lg text-sm font-medium bg-background border border-border text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors cursor-default"
                     >

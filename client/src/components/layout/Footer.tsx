@@ -6,23 +6,23 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <h3 className="text-xl font-bold font-display">Le Trong Long</h3>
-          <p className="text-muted-foreground mt-1">Digital Marketing Specialist</p>
+          <p className="text-muted-foreground mt-1">Digital Marketing & SEO Specialist</p>
         </div>
-        
+
         <div className="flex items-center gap-4">
-          <a href="mailto:contact@example.com" className="p-2 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all group">
+          <a href="mailto:contact@example.com" className="p-2 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all group" aria-label="Email">
             <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all group">
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all group" aria-label="LinkedIn">
             <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all group">
+          <a href="https://github.com" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all group" aria-label="GitHub">
             <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
           </a>
         </div>
-        
+
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Le Trong Long. All rights reserved.
+          © {new Date().getFullYear()} Le Trong Long. Bảo lưu mọi quyền.
         </p>
       </div>
     </footer>

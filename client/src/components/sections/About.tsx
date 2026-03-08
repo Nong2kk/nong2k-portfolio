@@ -5,18 +5,18 @@ export function About() {
   const highlights = [
     {
       icon: <Search className="w-6 h-6 text-primary" />,
-      title: "Semantic SEO",
-      desc: "Creating deep topic clusters and highly optimized content structures."
+      title: "SEO Chuyên sâu",
+      desc: "Xây dựng topic cluster và cấu trúc nội dung tối ưu theo hướng semantic SEO, giúp website lên thứ hạng bền vững."
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-[#60A5FA]" />,
-      title: "Data Analysis",
-      desc: "Leveraging GA4 & Search Console to uncover growth opportunities."
+      title: "Tư duy dữ liệu",
+      desc: "Sử dụng GA4 và Google Search Console để phân tích hiệu suất, phát hiện cơ hội và tối ưu chiến lược."
     },
     {
       icon: <Users className="w-6 h-6 text-secondary" />,
-      title: "Conversion Focus",
-      desc: "Optimizing UX and content for multi-channel e-commerce success."
+      title: "Tối ưu chuyển đổi",
+      desc: "Tối ưu UX và nội dung hướng đến chuyển đổi trên các kênh thương mại điện tử đa nền tảng."
     }
   ];
 
@@ -26,7 +26,7 @@ export function About() {
         <Reveal>
           <div className="mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 font-display">
-              About <span className="text-primary">Me</span>
+              Về <span className="text-primary">Mình</span>
             </h2>
             <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-transparent rounded-full" />
           </div>
@@ -36,10 +36,10 @@ export function About() {
           <Reveal delay={0.1}>
             <div className="prose prose-invert prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed">
-                With 2 years of dedicated experience in SEO and E-commerce, I specialize in building robust digital ecosystems that drive organic growth. My methodology revolves around semantic SEO, comprehensive topic clustering, and rigorous content optimization.
+                Mình là Le Trong Long — Digital Marketing Specialist với hơn 2 năm kinh nghiệm trong lĩnh vực SEO và thương mại điện tử. Mình chuyên xây dựng chiến lược nội dung bài bản, từ nghiên cứu từ khóa đến triển khai topic cluster và tối ưu on-page/off-page theo hướng semantic SEO.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                I possess a deeply data-driven marketing mindset, utilizing tools like Google Analytics 4 and Google Search Console to monitor performance, conduct audits, and refine strategies. Whether it's optimizing a corporate website or scaling multi-channel e-commerce storefronts (Shopee, TikTok Shop, Lazada), my goal is to connect search intent with tangible conversions.
+                Phong cách làm việc của mình luôn dựa trên dữ liệu: theo dõi hiệu suất qua Google Analytics 4 và Google Search Console, thực hiện content audit định kỳ và liên tục cải thiện chiến lược dựa trên kết quả thực tế. Mục tiêu của mình là đóng góp vào sự tăng trưởng bền vững của doanh nghiệp — không chỉ tăng traffic, mà tăng traffic có chuyển đổi thật.
               </p>
             </div>
           </Reveal>

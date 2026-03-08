@@ -3,10 +3,10 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
+  { label: "Về mình", href: "#about" },
+  { label: "Kỹ năng", href: "#skills" },
+  { label: "Kinh nghiệm", href: "#experience" },
+  { label: "Dự án", href: "#projects" },
 ];
 
 export function Navbar() {
@@ -28,8 +28,8 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a 
-          href="#" 
+        <a
+          href="#"
           className="text-2xl font-bold font-display tracking-tight text-foreground hover:text-primary transition-colors"
         >
           Long<span className="text-primary">.</span>
@@ -50,14 +50,15 @@ export function Navbar() {
             href="#contact"
             className="px-5 py-2.5 rounded-full text-sm font-semibold bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-[0_0_15px_rgba(0,240,255,0.15)] hover:shadow-[0_0_25px_rgba(0,240,255,0.4)]"
           >
-            Contact Me
+            Liên hệ
           </a>
         </nav>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden p-2 text-foreground"
           onClick={() => setIsOpen(!isOpen)}
+          data-testid="button-mobile-menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -88,7 +89,7 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="mt-4 text-center px-5 py-3 rounded-xl text-base font-semibold bg-primary text-primary-foreground"
               >
-                Contact Me
+                Liên hệ
               </a>
             </div>
           </motion.div>

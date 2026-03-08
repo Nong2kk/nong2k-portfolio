@@ -1,0 +1,124 @@
+Please redesign and rewrite my entire portfolio website into fully natural Vietnamese for a recruiter audience in Vietnam.
+
+Goal:
+Create a polished personal portfolio website that I can send to employers / recruiters when applying for Digital Marketing, SEO, Performance Marketing, or related roles.
+
+Important requirements:
+- Rewrite ALL visible text on the site into Vietnamese
+- Keep the design modern, clean, premium, and professional
+- Tone: confident, smart, young, slightly modern, but NOT childish or slang-heavy
+- The website should feel recruiter-friendly, credible, and easy to scan
+- Make the wording sound like a strong candidate profile, not like marketing copy
+- Keep the site visually impressive, but improve content clarity and hiring value
+- Preserve animations, visual style, and overall premium feel unless a better layout is needed
+- Optimize all headings and sections for portfolio/job application use
+- Make the content feel localized for Vietnamese recruiters
+
+Please update the full website structure and content into Vietnamese with these sections:
+
+1. Hero section
+- A short badge above the title
+- Main heading introducing me in Vietnamese
+- Professional role title
+- A concise summary that clearly explains my strengths
+- 2 CTA buttons:
+  - “Xem dự án”
+  - “Liên hệ với tôi”
+
+Suggested direction:
+Badge:
+“Sẵn sàng cho cơ hội mới”
+Heading:
+“Xin chào, mình là Long”
+Role:
+“Digital Marketing & SEO Specialist”
+Summary:
+“Mình tập trung vào SEO, tối ưu website và xây dựng chiến lược digital marketing dựa trên dữ liệu nhằm giúp doanh nghiệp tăng trưởng traffic, cải thiện chuyển đổi và phát triển bền vững.”
+
+2. About section
+Rewrite this section in Vietnamese as a concise recruiter-oriented self introduction:
+- Who I am
+- What I specialize in
+- My working style
+- My career goal
+Make it feel professional and trustworthy.
+
+3. Skills section
+Translate all skills into Vietnamese and regroup them logically.
+Use clear recruiter-friendly categories such as:
+- SEO
+- Digital Marketing
+- Phân tích dữ liệu
+- Công cụ & nền tảng
+- Website / Technical
+Keep the design modern and easy to scan.
+
+4. Experience section
+Rewrite the experience timeline fully in Vietnamese.
+Make each experience entry clearer and more professional.
+For each role, include:
+- Job title
+- Company name
+- Time period
+- 2–4 bullet points focused on achievements, responsibilities, and impact
+Use concise, strong wording suitable for a portfolio.
+
+5. Projects section
+Rewrite all projects in Vietnamese and make them sound more credible for employers.
+For each project, include:
+- Project title
+- Short overview
+- My role
+- Actions I took
+- Result / outcome if applicable
+Use a case-study style tone, but concise.
+
+6. Certifications section
+Translate and redesign certifications in Vietnamese.
+Make them look clean and credible.
+
+7. Contact section
+Rewrite the contact section in Vietnamese.
+Use professional wording that invites recruiters to connect.
+Suggested CTA tone:
+“Nếu bạn đang tìm kiếm một ứng viên về SEO / Digital Marketing, mình rất sẵn sàng kết nối và trao đổi thêm.”
+
+8. Navigation / menu
+Translate all navigation labels into Vietnamese.
+
+9. Footer
+Rewrite footer into Vietnamese and make it simple, clean, and professional.
+
+10. SEO / metadata
+Also update:
+- page title
+- meta description
+- Open Graph title
+- Open Graph description
+- any obvious SEO text
+All metadata should be written in Vietnamese and aligned with a personal portfolio for recruiters.
+
+Content style requirements:
+- Entire website must be in Vietnamese
+- Writing should be concise, professional, modern, and recruiter-oriented
+- Avoid cheesy phrases, excessive hype, or childish wording
+- Avoid too much slang
+- Use polished Vietnamese that still feels personal and approachable
+- Prioritize clarity, credibility, and strong first impression
+
+Design improvement requirements:
+- Keep the current premium dark modern aesthetic
+- Improve readability if needed
+- Ensure typography hierarchy is strong
+- Make key hiring information easier to scan
+- Highlight my strengths and experience more clearly
+- Make the page feel like a serious portfolio for job applications
+
+Technical requirement:
+- Update only the website content, labels, and structure as needed
+- Keep the site fully working
+- Do not break layout or animations
+- Ensure responsive design still works
+
+If some current content is weak or repetitive, rewrite it better in Vietnamese instead of translating literally.
+If needed, improve section titles and CTA text to better fit a recruiter-facing portfolio.
