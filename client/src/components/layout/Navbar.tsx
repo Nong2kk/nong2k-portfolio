@@ -34,7 +34,7 @@ export function Navbar() {
           <img
             src={logoImg}
             alt="Long – Digital Marketing & SEO"
-            className="h-10 w-auto object-contain"
+            className="h-14 w-14 rounded-full object-cover border border-cyan-400/40 shadow-[0_0_20px_rgba(34,211,238,0.25)]"
           />
         </a>
 
