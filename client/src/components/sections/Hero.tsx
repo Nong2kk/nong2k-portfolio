@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import profileImg from "@assets/IMG_8936_1773006924508.PNG";
 
 const stats = [
-  { value: "2+", label: "Năm kinh nghiệm" },
-  { value: "3", label: "Môi trường làm việc" },
-  { value: "GA4", label: "& GSC thành thạo" },
+  { value: "2+", label: "Years Experience" },
+  { value: "SEO", label: "& Content Marketing" },
+  { value: "Analytics", label: "& Performance Tracking" },
 ];
 
 export function Hero() {
