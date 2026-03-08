@@ -106,7 +106,7 @@ export function Hero() {
                   src={profileImg}
                   alt="Lê Trọng Long – SEO & Digital Marketing Specialist"
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: "80% 30%" }}
+                  style={{ objectPosition: "85% 72%", transform: "scale(1.25)", transformOrigin: "85% 72%" }}
                 />
               </div>
             </div>
