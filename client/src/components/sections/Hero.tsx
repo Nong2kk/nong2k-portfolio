@@ -118,7 +118,7 @@ export function Hero() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </div>
-                <span className="text-xs font-semibold text-foreground">Sẵn sàng làm việc</span>
+                <span className="text-xs font-semibold text-foreground">Digital Marketer</span>
               </div>
             </div>
           </div>
