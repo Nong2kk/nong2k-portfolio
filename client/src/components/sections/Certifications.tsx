@@ -7,14 +7,14 @@ const certifications = [
     issuer: "Google / Coursera",
     year: "2023",
     description: "Chiến lược digital marketing tổng thể, bao gồm SEO, quảng cáo trực tuyến, phân tích dữ liệu và lập kế hoạch campaign.",
-    url: "#"
+    url: "https://xuongthuchanh.poly.edu.vn/certificate/PS29378/65e7dd734816ab157729d7a7"
   },
   {
     title: "SEO Optimization Certificate",
     issuer: "SEMrush Academy",
     year: "2023",
     description: "Kỹ thuật SEO chuyên sâu: nghiên cứu từ khóa, tối ưu on-page, backlink và đo lường hiệu suất tìm kiếm tự nhiên.",
-    url: "#"
+    url: "https://xuongthuchanh.poly.edu.vn/certificate/PS29378/664da35eda2249cdbb965b3e"
   }
 ];
 
