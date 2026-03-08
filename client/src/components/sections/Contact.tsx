@@ -25,19 +25,19 @@ const contactInfo = [
   {
     icon: <Phone className="w-5 h-5 text-primary" />,
     label: "Điện thoại",
-    value: "0982319344",
+    value: "0982 319 344",
     href: "tel:+84982319344"
   },
   {
     icon: <Linkedin className="w-5 h-5 text-primary" />,
     label: "LinkedIn",
-    value: "www.linkedin.com/in/tronglongledgt",
-    href: "www.linkedin.com/in/tronglongledgt"
+    value: "linkedin.com/in/tronglongledgt",
+    href: "https://linkedin.com/in/tronglongledgt"
   },
   {
     icon: <MapPin className="w-5 h-5 text-primary" />,
-    label: "Địa Chỉ",
-    value: "Tân Bình",
+    label: "Địa chỉ",
+    value: "Tân Bình, TP.HCM",
     href: null
   },
 ];
@@ -72,8 +72,8 @@ export function Contact() {
               Kết nối <span className="text-primary">với tôi</span>
             </h2>
             <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-transparent rounded-full mx-auto" />
-            <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-lg">
-              Nếu bạn đang tìm kiếm ứng viên SEO hoặc Digital Marketing có kinh nghiệm thực chiến, mình rất sẵn sàng trao đổi trực tiếp.
+            <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
+              Nếu bạn đang tìm kiếm một Digital Marketer có kinh nghiệm SEO, Content Strategy và tối ưu hiệu suất website, mình luôn sẵn sàng kết nối và trao đổi để cùng tạo ra giá trị tăng trưởng cho doanh nghiệp.
             </p>
           </div>
         </Reveal>
@@ -97,7 +97,7 @@ export function Contact() {
                             href={item.href}
                             target={item.href.startsWith("http") ? "_blank" : undefined}
                             rel="noreferrer"
-                            className="text-base font-medium text-foreground hover:text-primary transition-colors"
+                            className="text-base font-medium text-foreground hover:text-primary transition-colors break-all"
                           >
                             {item.value}
                           </a>
@@ -111,8 +111,8 @@ export function Contact() {
               </div>
 
               <div className="mt-auto p-5 rounded-2xl bg-primary/5 border border-primary/15">
-                <p className="text-sm font-semibold text-foreground mb-1">Sẵn sàng phỏng vấn</p>
-                <p className="text-sm text-muted-foreground">Có thể bắt đầu sớm nhất trong 1–2 tuần. Ưu tiên vị trí full-time tại Hà Nội hoặc làm việc hybrid.</p>
+                <p className="text-sm font-semibold text-foreground mb-1">Sẵn sàng làm việc</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">Có thể bắt đầu trong 1–2 tuần. Ưu tiên vị trí tại TP.HCM hoặc làm việc hybrid/remote.</p>
               </div>
             </div>
           </Reveal>
@@ -121,7 +121,7 @@ export function Contact() {
           <Reveal delay={0.2} className="lg:col-span-3">
             <div className="glass-card p-8 md:p-10 rounded-3xl">
               <h3 className="text-xl font-bold text-foreground mb-2 font-display">Gửi tin nhắn cho mình</h3>
-              <p className="text-sm text-muted-foreground mb-7">Điền form bên dưới và mình sẽ phản hồi trong vòng 24 giờ.</p>
+              <p className="text-sm text-muted-foreground mb-7">Điền thông tin bên dưới, mình sẽ phản hồi sớm nhất có thể.</p>
 
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                 <div className="grid md:grid-cols-2 gap-5">
@@ -144,7 +144,7 @@ export function Contact() {
                       {...register("email")}
                       data-testid="input-email"
                       className={`w-full px-4 py-3 rounded-xl bg-background border ${errors.email ? 'border-destructive' : 'border-border'} text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-sm`}
-                      placeholder="email@congty.com"
+                      placeholder="email@company.com"
                     />
                     {errors.email && <p className="text-xs text-destructive mt-1">{errors.email.message}</p>}
                   </div>
@@ -171,7 +171,7 @@ export function Contact() {
                     data-testid="input-message"
                     rows={5}
                     className={`w-full px-4 py-3 rounded-xl bg-background border ${errors.message ? 'border-destructive' : 'border-border'} text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none text-sm`}
-                    placeholder="Xin chào Long, tôi đang tuyển dụng vị trí... và muốn trao đổi thêm."
+                    placeholder="Xin chào Long, mình muốn trao đổi với bạn về vị trí Digital Marketing / SEO..."
                   />
                   {errors.message && <p className="text-xs text-destructive mt-1">{errors.message.message}</p>}
                 </div>
@@ -190,7 +190,7 @@ export function Contact() {
                     "Đã gửi thành công! Mình sẽ phản hồi sớm."
                   ) : (
                     <>
-                      Gửi tin nhắn <Send className="w-5 h-5" />
+                      Gửi liên hệ <Send className="w-5 h-5" />
                     </>
                   )}
                 </button>
