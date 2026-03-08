@@ -80,3 +80,22 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary) / 0.5);
 }
+
+
+/* ── Rotating conic-gradient avatar ring ── */
+@keyframes spin-conic {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.avatar-conic-ring {
+  background: conic-gradient(
+    from 0deg,
+    #00f0ff 0%,
+    #60a5fa 30%,
+    #8b5cf6 60%,
+    #00f0ff 100%
+  );
+  animation: spin-conic 10s linear infinite;
+  border-radius: 50%;
+}

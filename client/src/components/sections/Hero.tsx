@@ -83,27 +83,27 @@ export function Hero() {
         {/* Right: Profile Photo */}
         <Reveal delay={0.25} direction="left" className="hidden lg:flex items-center justify-center">
           <div className="relative flex items-center justify-center">
-            {/* Soft ambient glow behind avatar */}
-            <div className="absolute w-80 h-80 rounded-full bg-primary/25 blur-3xl" />
-            <div className="absolute w-64 h-64 rounded-full bg-secondary/15 blur-2xl" />
+            {/* Soft ambient glow */}
+            <div className="absolute w-80 h-80 rounded-full bg-primary/20 blur-3xl" />
+            <div className="absolute w-56 h-56 rounded-full bg-secondary/15 blur-2xl" />
 
-            {/* Outer slow-spinning dashed ring */}
+            {/* Outer slow-spinning dashed decoration ring */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-              className="absolute w-[340px] h-[340px] rounded-full border border-primary/25 border-dashed"
-            />
-            {/* Inner counter-spinning dashed ring */}
-            <motion.div
-              animate={{ rotate: -360 }}
-              transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-              className="absolute w-[290px] h-[290px] rounded-full border border-secondary/20 border-dashed"
+              className="absolute w-[340px] h-[340px] rounded-full border border-primary/20 border-dashed"
             />
 
-            {/* Glowing gradient border ring */}
-            <div className="relative w-64 h-64 rounded-full p-[3px] bg-gradient-to-br from-primary via-[#60A5FA] to-secondary shadow-[0_0_40px_rgba(0,240,255,0.35)]">
-              {/* Inner white ring to separate gradient from photo */}
-              <div className="w-full h-full rounded-full overflow-hidden bg-background">
+            {/* Rotating conic-gradient border ring */}
+            <div
+              className="avatar-conic-ring relative"
+              style={{ width: 268, height: 268, padding: 3 }}
+            >
+              {/* Static image container — background masks the conic fill behind the photo */}
+              <div
+                className="w-full h-full rounded-full overflow-hidden"
+                style={{ background: "hsl(var(--background))" }}
+              >
                 <img
                   src={profileImg}
                   alt="Lê Trọng Long – SEO & Digital Marketing Specialist"
@@ -113,8 +113,18 @@ export function Hero() {
               </div>
             </div>
 
+            {/* Glow halo sitting behind the ring */}
+            <div
+              className="absolute rounded-full pointer-events-none"
+              style={{
+                width: 268,
+                height: 268,
+                boxShadow: "0 0 40px 6px rgba(0,240,255,0.30), 0 0 80px 10px rgba(96,165,250,0.15)",
+              }}
+            />
+
             {/* Floating status badge */}
-            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
               <div className="glass-card px-4 py-2 rounded-full flex items-center gap-2 shadow-lg border border-primary/20">
                 <div className="relative flex h-2 w-2 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
