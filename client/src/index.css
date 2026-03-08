@@ -96,6 +96,6 @@
     #8b5cf6 60%,
     #00f0ff 100%
   );
-  animation: spin-conic 10s linear infinite;
+  animation: spin-conic 3s linear infinite;
   border-radius: 50%;
 }
