@@ -80,44 +80,45 @@ export function Hero() {
 
         {/* Right: Profile Photo */}
         <Reveal delay={0.25} direction="left" className="hidden lg:flex items-center justify-center">
-          <div className="relative w-full max-w-sm mx-auto">
-            {/* Outer spinning ring */}
+          <div className="relative flex items-center justify-center">
+            {/* Soft ambient glow behind avatar */}
+            <div className="absolute w-80 h-80 rounded-full bg-primary/25 blur-3xl" />
+            <div className="absolute w-64 h-64 rounded-full bg-secondary/15 blur-2xl" />
+
+            {/* Outer slow-spinning dashed ring */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-              className="absolute -inset-6 rounded-full border border-primary/20 border-dashed"
+              className="absolute w-[340px] h-[340px] rounded-full border border-primary/25 border-dashed"
             />
-            {/* Inner spinning ring */}
+            {/* Inner counter-spinning dashed ring */}
             <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-              className="absolute -inset-2 rounded-full border border-secondary/15 border-dashed"
+              className="absolute w-[290px] h-[290px] rounded-full border border-secondary/20 border-dashed"
             />
 
-            {/* Glow behind photo */}
-            <div className="absolute inset-0 rounded-3xl bg-primary/20 blur-2xl scale-90" />
+            {/* Glowing gradient border ring */}
+            <div className="relative w-64 h-64 rounded-full p-[3px] bg-gradient-to-br from-primary via-[#60A5FA] to-secondary shadow-[0_0_40px_rgba(0,240,255,0.35)]">
+              {/* Inner white ring to separate gradient from photo */}
+              <div className="w-full h-full rounded-full overflow-hidden bg-background">
+                <img
+                  src={profileImg}
+                  alt="Lê Trọng Long – SEO & Digital Marketing Specialist"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: "80% 30%" }}
+                />
+              </div>
+            </div>
 
-            {/* Photo frame */}
-            <div className="relative rounded-3xl overflow-hidden border border-primary/30 shadow-2xl shadow-primary/20">
-              <img
-                src={profileImg}
-                alt="Lê Trọng Long – SEO & Digital Marketing Specialist"
-                className="w-full h-full object-cover object-center aspect-[3/4]"
-              />
-              {/* Subtle dark gradient at bottom for text readability */}
-              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background/80 to-transparent" />
-              {/* Name tag overlay */}
-              <div className="absolute bottom-4 left-4 right-4">
-                <div className="glass-card px-4 py-2.5 rounded-xl flex items-center gap-3">
-                  <div className="relative flex h-2 w-2 shrink-0">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-foreground leading-tight">Lê Trọng Long</p>
-                    <p className="text-xs text-muted-foreground">SEO & Digital Marketing</p>
-                  </div>
+            {/* Floating status badge */}
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
+              <div className="glass-card px-4 py-2 rounded-full flex items-center gap-2 shadow-lg border border-primary/20">
+                <div className="relative flex h-2 w-2 shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </div>
+                <span className="text-xs font-semibold text-foreground">Sẵn sàng làm việc</span>
               </div>
             </div>
           </div>
