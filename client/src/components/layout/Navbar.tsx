@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoImg from "@assets/ChatGPT_Image_06_38_41_9_thg_3,_2026_1773013229639.png";
 
 const navItems = [
   { label: "Giới thiệu", href: "#about" },
@@ -29,11 +30,12 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a
-          href="#"
-          className="text-2xl font-bold font-display tracking-tight text-foreground hover:text-primary transition-colors"
-        >
-          Long<span className="text-primary">.</span>
+        <a href="#" className="flex items-center" data-testid="link-logo">
+          <img
+            src={logoImg}
+            alt="Long – Digital Marketing & SEO"
+            className="h-10 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop Nav */}
