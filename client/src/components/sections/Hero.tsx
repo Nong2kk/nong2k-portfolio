@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import { motion } from "framer-motion";
-import profileImg from "@assets/nong_1773005617399.jpg";
+import profileImg from "@assets/IMG_8936_1773006924508.PNG";
 
 const stats = [
   { value: "2+", label: "Năm kinh nghiệm" },
@@ -106,7 +106,7 @@ export function Hero() {
                   src={profileImg}
                   alt="Lê Trọng Long – SEO & Digital Marketing Specialist"
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: "85% 72%", transform: "scale(1.25)", transformOrigin: "85% 72%" }}
+                  style={{ objectPosition: "center 25%" }}
                 />
               </div>
             </div>
