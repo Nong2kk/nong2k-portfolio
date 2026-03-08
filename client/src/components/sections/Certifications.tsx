@@ -1,4 +1,4 @@
-import { Award, CheckCircle } from "lucide-react";
+import { Award, CheckCircle, ExternalLink } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 
 const certifications = [
@@ -6,13 +6,15 @@ const certifications = [
     title: "Digital Marketing Strategy Certificate",
     issuer: "Google / Coursera",
     year: "2023",
-    description: "Chiến lược digital marketing tổng thể, bao gồm SEO, quảng cáo trực tuyến, phân tích dữ liệu và lập kế hoạch campaign."
+    description: "Chiến lược digital marketing tổng thể, bao gồm SEO, quảng cáo trực tuyến, phân tích dữ liệu và lập kế hoạch campaign.",
+    url: "#"
   },
   {
     title: "SEO Optimization Certificate",
     issuer: "SEMrush Academy",
     year: "2023",
-    description: "Kỹ thuật SEO chuyên sâu: nghiên cứu từ khóa, tối ưu on-page, backlink và đo lường hiệu suất tìm kiếm tự nhiên."
+    description: "Kỹ thuật SEO chuyên sâu: nghiên cứu từ khóa, tối ưu on-page, backlink và đo lường hiệu suất tìm kiếm tự nhiên.",
+    url: "#"
   }
 ];
 
@@ -51,6 +53,17 @@ export function Certifications() {
                 <div className="flex items-center gap-1.5 mt-5 text-xs font-medium text-primary/70">
                   <CheckCircle className="w-3.5 h-3.5" />
                   Đã xác nhận
+                </div>
+                <div className="mt-4">
+                  <a
+                    href={cert.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    data-testid={`link-certificate-${idx}`}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-primary/50 text-primary text-sm font-medium hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-[0_0_14px_rgba(0,240,255,0.4)] transition-all duration-250"
+                  >
+                    Xem chứng chỉ <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
                 </div>
               </div>
             </Reveal>
