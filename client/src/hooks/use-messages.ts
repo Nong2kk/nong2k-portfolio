@@ -12,7 +12,7 @@ export function useCreateMessage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      
+
       if (!res.ok) {
         if (res.status === 400) {
           const error: ValidationError = await res.json();
@@ -20,7 +20,7 @@ export function useCreateMessage() {
         }
         throw new Error("Failed to send message. Please try again later.");
       }
-      
+
       return await res.json();
     },
     onSuccess: () => {
@@ -35,6 +35,6 @@ export function useCreateMessage() {
         title: "Error",
         description: error.message,
       });
-    }
+    },
   });
 }

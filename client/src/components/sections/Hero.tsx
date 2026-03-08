@@ -20,21 +20,21 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Available for new opportunities
+              Open to work nè ✨
             </div>
           </Reveal>
           
           <Reveal delay={0.1}>
             <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] mb-6">
-              Hi, I'm <span className="text-gradient">Le Trong Long</span>
+              Hi, mình là <span className="text-gradient">Long</span>
               <br />
-              <span className="text-4xl md:text-5xl text-foreground/80">Digital Marketing & SEO</span>
+              <span className="text-4xl md:text-5xl text-foreground/80">SEO & Digital Marketing</span>
             </h1>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-              Data-driven SEO specialist focused on growing organic traffic and supporting multi-channel conversions. I transform insights into actionable strategies.
+              Mình chuyên SEO, tối ưu website và triển khai digital marketing theo hướng data-driven để kéo traffic chất lượng và tăng chuyển đổi thật.
             </p>
           </Reveal>
 
@@ -44,13 +44,13 @@ export function Hero() {
                 href="#projects" 
                 className="px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary to-[#60A5FA] text-primary-foreground shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
               >
-                View Projects <ArrowRight className="w-5 h-5" />
+                Xem dự án <ArrowRight className="w-5 h-5" />
               </a>
               <a 
                 href="#contact" 
                 className="px-8 py-4 rounded-xl font-semibold bg-card border border-border hover:border-primary/50 hover:bg-primary/5 text-foreground transition-all duration-300 flex items-center gap-2 group"
               >
-                Contact Me 
+                Liên hệ
               </a>
             </div>
           </Reveal>
