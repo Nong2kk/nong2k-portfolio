@@ -1,6 +1,12 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import { motion } from "framer-motion";
+
+const stats = [
+  { value: "2+", label: "Năm kinh nghiệm" },
+  { value: "3", label: "Môi trường làm việc" },
+  { value: "GA4", label: "& GSC thành thạo" },
+];
 
 export function Hero() {
   return (
@@ -15,26 +21,27 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 items-center">
         <div className="max-w-3xl">
           <Reveal>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6" data-testid="badge-availability">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Sẵn sàng cho cơ hội mới
+              Đang tìm kiếm cơ hội mới
             </div>
           </Reveal>
 
           <Reveal delay={0.1}>
-            <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] mb-6">
-              Xin chào, mình là <span className="text-gradient">Long</span>
-              <br />
-              <span className="text-4xl md:text-5xl text-foreground/80">Digital Marketing & SEO Specialist</span>
+            <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] mb-4" data-testid="hero-heading">
+              Lê Trọng Long
             </h1>
+            <p className="text-2xl md:text-3xl font-semibold text-primary mb-6 tracking-tight">
+              SEO & Digital Marketing Specialist
+            </p>
           </Reveal>
 
           <Reveal delay={0.2}>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-              Mình tập trung vào SEO, tối ưu website và xây dựng chiến lược digital marketing dựa trên dữ liệu nhằm giúp doanh nghiệp tăng trưởng traffic, cải thiện chuyển đổi và phát triển bền vững.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl" data-testid="hero-description">
+              Chuyên triển khai SEO kỹ thuật, xây dựng chiến lược nội dung theo hướng dữ liệu và tối ưu hiệu suất thương mại điện tử đa kênh. Mình đo lường mọi thứ bằng con số và tối ưu liên tục cho đến khi có kết quả thật.
             </p>
           </Reveal>
 
@@ -42,30 +49,29 @@ export function Hero() {
             <div className="flex flex-wrap items-center gap-4">
               <a
                 href="#projects"
+                data-testid="link-view-projects"
                 className="px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary to-[#60A5FA] text-primary-foreground shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
               >
-                Xem dự án <ArrowRight className="w-5 h-5" />
+                Xem dự án thực tế <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#contact"
-                className="px-8 py-4 rounded-xl font-semibold bg-card border border-border hover:border-primary/50 hover:bg-primary/5 text-foreground transition-all duration-300 flex items-center gap-2 group"
+                data-testid="link-contact"
+                className="px-8 py-4 rounded-xl font-semibold bg-card border border-border hover:border-primary/50 hover:bg-primary/5 text-foreground transition-all duration-300"
               >
-                Liên hệ với tôi
+                Liên hệ tuyển dụng
               </a>
             </div>
           </Reveal>
 
           <Reveal delay={0.4}>
-            <div className="mt-12 flex items-center gap-6 text-sm font-medium text-muted-foreground">
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-foreground font-display">2+</span>
-                <span>Năm kinh nghiệm</span>
-              </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-foreground font-display">15+</span>
-                <span>Dự án hoàn thành</span>
-              </div>
+            <div className="mt-12 flex flex-wrap items-center gap-8">
+              {stats.map((stat, idx) => (
+                <div key={idx} className={`flex flex-col ${idx < stats.length - 1 ? 'pr-8 border-r border-border' : ''}`}>
+                  <span className="text-2xl font-bold text-foreground font-display">{stat.value}</span>
+                  <span className="text-sm text-muted-foreground">{stat.label}</span>
+                </div>
+              ))}
             </div>
           </Reveal>
         </div>

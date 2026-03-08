@@ -3,10 +3,11 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { label: "Về mình", href: "#about" },
+  { label: "Giới thiệu", href: "#about" },
   { label: "Kỹ năng", href: "#skills" },
   { label: "Kinh nghiệm", href: "#experience" },
   { label: "Dự án", href: "#projects" },
+  { label: "Chứng chỉ", href: "#certifications" },
 ];
 
 export function Navbar() {
@@ -36,7 +37,7 @@ export function Navbar() {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-7">
           {navItems.map((item) => (
             <a
               key={item.label}
@@ -50,7 +51,7 @@ export function Navbar() {
             href="#contact"
             className="px-5 py-2.5 rounded-full text-sm font-semibold bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-[0_0_15px_rgba(0,240,255,0.15)] hover:shadow-[0_0_25px_rgba(0,240,255,0.4)]"
           >
-            Liên hệ
+            Liên hệ tuyển dụng
           </a>
         </nav>
 
@@ -89,7 +90,7 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="mt-4 text-center px-5 py-3 rounded-xl text-base font-semibold bg-primary text-primary-foreground"
               >
-                Liên hệ
+                Liên hệ tuyển dụng
               </a>
             </div>
           </motion.div>
