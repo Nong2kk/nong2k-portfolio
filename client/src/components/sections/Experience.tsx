@@ -18,7 +18,7 @@ const experiences = [
   {
     role: "Marketing Intern",
     company: "Kien Xanh Design",
-    type: "Thực tập",
+    type: "Dự án Freelance",
     period: "2022 – 2023",
     summary: "Hỗ trợ đội ngũ marketing trong việc sản xuất nội dung SEO và tối ưu trải nghiệm người dùng trên website.",
     bullets: [
@@ -29,7 +29,7 @@ const experiences = [
   },
   {
     role: "Freelance – Tối ưu Thương mại Điện tử",
-    company: "Hafu Scented Candles",
+    company: "Nến Thơm Hafu",
     type: "Dự án freelance",
     period: "2023",
     summary: "Tối ưu toàn bộ gian hàng thương mại điện tử trên các sàn lớn nhằm cải thiện khả năng hiển thị và tỉ lệ chuyển đổi.",
