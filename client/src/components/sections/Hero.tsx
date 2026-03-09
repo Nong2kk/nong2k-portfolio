@@ -81,8 +81,8 @@ export function Hero() {
         </div>
 
         {/* Right: Profile Photo */}
-        <Reveal delay={0.25} direction="left" className="hidden lg:flex items-center justify-center">
-          <div className="relative flex items-center justify-center">
+        <Reveal delay={0.25} direction="left" className="flex items-center justify-center">
+          <div className="relative flex items-center justify-center scale-75 sm:scale-90 lg:scale-100">
             {/* Soft ambient glow */}
             <div className="absolute w-80 h-80 rounded-full bg-primary/20 blur-3xl" />
             <div className="absolute w-56 h-56 rounded-full bg-secondary/15 blur-2xl" />
