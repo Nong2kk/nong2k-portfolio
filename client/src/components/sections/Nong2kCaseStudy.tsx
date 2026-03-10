@@ -138,11 +138,11 @@ export function Nong2kCaseStudy() {
               {/* Description */}
               <div className="space-y-3">
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Khách hàng</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">CÔNG TY</p>
                   <h3 className="text-xl font-bold text-foreground">Vi Na Hoàng Long Vũ</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
-                  Vi Na Hoàng Long Vũ là doanh nghiệp hoạt động trong lĩnh vực thương mại và công nghiệp, tập trung cung cấp các sản phẩm và giải pháp chuyên biệt, đồng thời mở rộng hiện diện kỹ thuật số thông qua các kênh trực tuyến.
+                  Vi Na Hoàng Long Vũ là doanh nghiệp thương mại thiết bị công nghiệp, chuyên cung cấp máy móc, dụng cụ điện cầm tay và vật tư tiêu hao chính hãng từ các thương hiệu lớn như Bosch, Makita, Milwaukee, Dewalt.
                 </p>
                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
                   Dự án tập trung vào cải thiện khả năng hiển thị tự nhiên, nâng cao thứ hạng từ khóa và xây dựng cấu trúc nội dung SEO có khả năng mở rộng để hỗ trợ tăng trưởng kỹ thuật số dài hạn.
