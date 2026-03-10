@@ -99,3 +99,16 @@
   animation: spin-conic 3s linear infinite;
   border-radius: 50%;
 }
+
+/* ── Scrolling marquee ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
