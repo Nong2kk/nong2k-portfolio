@@ -1,0 +1,196 @@
+I want to create a new section in my portfolio called:
+
+"SEO Project – Nong2k"
+
+This section should showcase a real SEO case study similar to a professional marketing case study layout with the following structure:
+
+Company Overview → Challenge → Before / After performance → Key SEO results.
+
+The design should be clean, modern, and consistent with my existing dark theme portfolio.
+
+Important requirements:
+- Use a professional case study layout
+- Make it easy for me to replace images later
+- Keep spacing clean and readable
+- Use React + Tailwind CSS
+- Responsive for desktop and mobile
+
+------------------------------------------------
+
+SECTION STRUCTURE
+
+Title of section:
+SEO Project – Nong2k
+
+Subtitle:
+SEO Case Study: Organic Growth Strategy
+
+------------------------------------------------
+
+BLOCK 1 – COMPANY OVERVIEW
+
+Left side:
+Company logo placeholder
+
+Right side:
+Company description text block.
+
+Content:
+
+Company: Vi Na Hoàng Long Vũ
+
+Description example:
+
+"Vi Na Hoàng Long Vũ is a company operating in the commercial and industrial sector. The business focuses on delivering specialized products and solutions while expanding its digital presence through online channels. 
+
+The project focused on improving organic visibility, strengthening keyword rankings, and building a scalable SEO content structure to support long-term digital growth."
+
+------------------------------------------------
+
+BLOCK 2 – CHALLENGE
+
+Use a highlighted rounded badge title:
+
+Challenge
+
+Below the badge add a paragraph explaining the SEO challenge.
+
+Example text:
+
+"The primary challenge was to increase organic traffic and improve search visibility in a competitive niche. The website required better keyword targeting, stronger internal linking, and optimized content to capture high-intent search traffic."
+
+------------------------------------------------
+
+BLOCK 3 – BEFORE / AFTER PERFORMANCE
+
+Create a two-step visual comparison section.
+
+Step 1:
+Label badge: BEFORE
+
+Below it place two image placeholders:
+
+1) Google Analytics traffic screenshot
+2) SEMrush metrics screenshot
+
+These images should be easily replaceable.
+
+Step 2:
+Label badge: AFTER
+
+Below it place two image placeholders:
+
+1) Google Analytics updated performance
+2) SEMrush updated performance
+
+Use clean cards with subtle shadows.
+
+------------------------------------------------
+
+BLOCK 4 – SEMRUSH DATA
+
+Title:
+SEMrush Performance Data
+
+Create a grid with metrics cards such as:
+
+- Organic Traffic
+- Authority Score
+- Number of Ranking Keywords
+- Backlinks
+
+Each card should have:
+
+Metric Title
+Value placeholder
+Small description
+
+Example:
+
+Organic Traffic
++XX%
+
+Authority Score
+XX → XX
+
+------------------------------------------------
+
+BLOCK 5 – KEYWORD RANKING RESULTS
+
+Title:
+Top Keyword Ranking Achievements
+
+Create a clean list or grid displaying keywords and their ranking positions.
+
+Example format:
+
+Keyword | Position | Search Intent
+
+Example placeholders:
+
+industrial product keyword – Top 3
+product category keyword – Top 5
+long tail keyword – Top 1
+commercial solution keyword – Top 10
+
+Keep this section visually clean and structured.
+
+------------------------------------------------
+
+BLOCK 6 – GOOGLE SEARCH CONSOLE DATA
+
+Title:
+Google Search Console Performance
+
+Add two image placeholders for:
+
+1) Performance graph
+2) Keyword ranking performance
+
+Add a short description:
+
+"Performance data from Google Search Console showing the improvement in impressions, clicks, and keyword visibility after SEO optimization."
+
+------------------------------------------------
+
+DESIGN REQUIREMENTS
+
+- Maintain the same design style as my portfolio
+- Use dark theme cards
+- Rounded edges
+- Gradient badges similar to the example
+- Clear spacing between blocks
+- Subtle hover effects
+- Professional case study presentation
+
+------------------------------------------------
+
+TECHNICAL REQUIREMENTS
+
+- Build as a reusable React component
+- Use Tailwind CSS
+- Use placeholder images so I can replace them later
+- Ensure mobile responsiveness
+- Maintain consistent typography with the rest of the site
+
+------------------------------------------------
+
+IMPORTANT
+
+Do NOT hardcode real data.
+
+Use placeholders so I can easily replace:
+
+- company logo
+- SEMrush screenshots
+- Google Analytics screenshots
+- Google Search Console screenshots
+- keyword ranking data
+
+The section must be easy to update later.
+
+------------------------------------------------
+
+Goal:
+
+This section should look like a professional SEO case study used in digital marketing portfolios.
