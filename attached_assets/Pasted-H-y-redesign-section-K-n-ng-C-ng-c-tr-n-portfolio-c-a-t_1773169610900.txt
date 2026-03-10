@@ -1,0 +1,118 @@
+Hãy redesign section “Kỹ năng & Công cụ” trên portfolio của tôi theo hướng trực quan hơn, hiện đại hơn và chuyên nghiệp hơn, nhưng vẫn giữ dark theme hiện tại.
+
+Mục tiêu:
+- Phân biệt rõ giữa “Kỹ năng” và “Công cụ”
+- Ở phần kỹ năng: mỗi skill tag phải có icon liên quan, đúng ngữ nghĩa, đồng bộ và đẹp mắt
+- Ở phần công cụ: hiển thị logo nổi bật, chính xác, dễ nhận diện, trình bày như tool stack chuyên nghiệp
+- Giữ layout gọn gàng, không rối, dễ scan
+- Responsive tốt trên desktop và mobile
+
+Yêu cầu chi tiết:
+
+1. Giữ section title hiện tại:
+- badge nhỏ: “NĂNG LỰC”
+- heading lớn: “Kỹ năng & Công cụ”
+- subtitle có thể giữ hoặc tinh chỉnh ngắn gọn hơn nếu cần
+
+2. Phần “Kỹ năng”
+- Giữ cấu trúc card nhóm như hiện tại:
+  - SEO
+  - Digital Marketing
+  - Phân tích dữ liệu
+- Mỗi skill item không còn là text tag đơn thuần
+- Mỗi skill item phải có:
+  - icon nhỏ bên trái
+  - text bên phải
+  - padding hợp lý
+  - border nhẹ
+  - hover nổi nhẹ
+- Dùng icon từ lucide-react
+- Chọn icon đúng ngữ nghĩa, ví dụ:
+  - SEO Onpage → FileText
+  - SEO Offpage → Link2
+  - Kỹ thuật SEO → Code2 hoặc Settings2
+  - Nghiên cứu từ khóa → Search
+  - Topic Cluster → Network hoặc Blocks
+  - Semantic SEO → BrainCircuit
+  - Local SEO → MapPin
+  - Kiểm tra & audit nội dung → ClipboardCheck
+  - Content Marketing → PenSquare
+  - Lập chiến lược nội dung → Lightbulb
+  - Tối ưu tỉ lệ chuyển đổi (CRO) → TrendingUp hoặc Target
+  - Tối ưu UX nội dung → LayoutTemplate
+  - Thương mại điện tử đa kênh → ShoppingBag
+  - Viết nội dung chuẩn SEO → NotebookPen
+  - Google Analytics 4 → BarChart3
+  - Google Search Console → LineChart hoặc SearchCode
+  - Phân tích hành vi người dùng → Eye
+  - Báo cáo hiệu suất → FileBarChart
+  - Google Tag Manager → Tags
+
+3. Phần “Công cụ & Nền tảng”
+- Đổi từ text tag sang dạng grid tool cards hoặc logo badges
+- Mỗi tool phải có:
+  - logo rõ ràng
+  - tên tool
+  - style đồng nhất
+  - căn chỉnh đều
+- Các tool cần hiển thị:
+  - Ahrefs
+  - SEMrush
+  - WordPress
+  - Canva
+  - ChatGPT
+  - Gemini
+  - Perplexity
+  - Google Analytics 4
+  - Google Search Console
+  - Google Tag Manager
+  - Shopee
+  - TikTok Shop
+  - Lazada
+- Ưu tiên dùng SVG/logo chuẩn, hiển thị sắc nét trên dark theme
+- Nếu logo màu gốc không đồng nhất, hãy xử lý để chúng vẫn cân bằng thị giác
+- Chiều cao logo cần đồng đều
+- Không để logo nào quá to hoặc quá nhỏ
+
+4. Thiết kế UI
+- Giữ dark theme hiện tại
+- Dùng glass/dark card nhẹ
+- Border tinh tế
+- Hover:
+  - card sáng nhẹ hơn
+  - border nổi rõ hơn
+  - scale nhẹ 1.01–1.02
+- Khoảng cách giữa các item đều nhau
+- Icon skill cùng phong cách, không lẫn lộn style
+- Tool cards nhìn nổi bật hơn skill tags để tạo phân tầng thị giác
+
+5. Bố cục
+- Trên desktop:
+  - card kỹ năng và card công cụ cân đối
+  - grid gọn, không bị dồn
+- Trên mobile:
+  - tự xuống hàng đẹp
+  - logo không vỡ
+  - tag không quá chật
+  - khoảng cách dễ đọc
+
+6. Yêu cầu kỹ thuật
+- Sử dụng React + Tailwind
+- Dùng lucide-react cho icon kỹ năng
+- Có thể tách data thành arrays để render map cho sạch code
+- Nếu cần, tạo component nhỏ riêng cho:
+  - SkillTag
+  - ToolBadge hoặc ToolCard
+- Giữ code sạch, dễ chỉnh sửa về sau
+
+7. Lưu ý thiết kế
+- Section phải trông giống portfolio của một SEO/Digital Marketing Specialist chuyên nghiệp
+- Không làm quá nhiều màu gây rối
+- Ưu tiên cảm giác hiện đại, rõ ràng, có phân cấp
+- Phần công cụ cần nổi bật hơn hiện tại nhờ logo chính xác và đẹp mắt
+- Phần kỹ năng phải có icon liên quan, trùng khớp và đồng bộ thị giác
+
+Sau khi chỉnh xong:
+- cập nhật JSX/Tailwind cho section này
+- tối ưu spacing, typography và responsive
+- đảm bảo phần kỹ năng và công cụ nhìn khác nhau rõ ràng nhưng vẫn cùng một hệ thiết kế
