@@ -9,6 +9,8 @@ import {
 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import companyLogo from "@assets/Thiết_kế_chưa_có_tên_(7)_1773172173267.png";
+import semrushBefore from "@assets/image_1773173760503.png";
+import semrushAfter from "@assets/image_1773173888107.png";
 
 /* ──────────────────────────────────────────────────
    Replace these URLs with real screenshot paths when available.
@@ -17,9 +19,9 @@ import companyLogo from "@assets/Thiết_kế_chưa_có_tên_(7)_1773172173267.p
 const images = {
   logo: companyLogo as string | null,
   beforeAnalytics: null as string | null,
-  beforeSemrush: null as string | null,
+  beforeSemrush: semrushBefore as string | null,
   afterAnalytics: null as string | null,
-  afterSemrush: null as string | null,
+  afterSemrush: semrushAfter as string | null,
   gscPerformance: null as string | null,
   gscKeywords: null as string | null,
 };
