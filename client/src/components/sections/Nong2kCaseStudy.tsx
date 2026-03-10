@@ -8,7 +8,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
-import companyLogo from "@assets/logo-01_nobg.png";
+import companyLogo from "@assets/logo-hlv-nobg.png";
 
 /* ──────────────────────────────────────────────────
    Replace these URLs with real screenshot paths when available.
