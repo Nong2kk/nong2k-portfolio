@@ -8,7 +8,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
-import companyLogo from "@assets/logo-hlv-nobg.png";
+import companyLogo from "@assets/Thiết_kế_chưa_có_tên_(7)_1773172173267.png";
 
 /* ──────────────────────────────────────────────────
    Replace these URLs with real screenshot paths when available.
@@ -141,7 +141,15 @@ export function Nong2kCaseStudy() {
             <div className="grid md:grid-cols-[200px_1fr] gap-8 items-start">
               <div data-testid="company-logo">
                 {images.logo
-                  ? <img src={images.logo} alt="Company Logo" className="w-full rounded-2xl object-contain" />
+                  ? (
+                    <div className="w-full rounded-2xl bg-white p-5 flex items-center justify-center shadow-sm">
+                      <img
+                        src={images.logo}
+                        alt="Hoàng Long Vũ – Company Logo"
+                        className="w-full h-auto object-contain max-h-24"
+                      />
+                    </div>
+                  )
                   : <LogoPlaceholder />}
               </div>
               <div className="space-y-4">
