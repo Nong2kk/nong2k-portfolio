@@ -8,6 +8,9 @@ import {
   SiPerplexity, SiShopee, SiTiktok, SiSemrush, SiGoogletagmanager
 } from "react-icons/si";
 import { Reveal } from "../ui/Reveal";
+import screamingFrogImg from "@assets/image_1773182432464.png";
+import lazadaImg from "@assets/image_1773182474240.png";
+import capCutImg from "@assets/image_1773182489782.png";
 
 const skillCategories = [
   {
@@ -54,6 +57,8 @@ const tools: {
   icon?: React.ComponentType<{ className?: string }>;
   color: string;
   textBadge?: string;
+  imgSrc?: string;
+  imgBg?: string;
 }[] = [
   { name: "SEMrush",              icon: SiSemrush,          color: "#FF642D" },
   { name: "Google Analytics 4",  icon: SiGoogleanalytics,  color: "#E37400" },
@@ -61,15 +66,15 @@ const tools: {
   { name: "Google Tag Manager",  icon: SiGoogletagmanager, color: "#4285F4" },
   { name: "WordPress",           icon: SiWordpress,        color: "#21759B" },
   { name: "Canva",               icon: SiCanva,            color: "#00C4CC" },
-  { name: "CapCut",                                        color: "#1C1C1E", textBadge: "CC" },
+  { name: "CapCut",              imgSrc: capCutImg,        color: "#1C1C1E", imgBg: "#FFFFFF" },
   { name: "ChatGPT",             icon: SiOpenai,           color: "#74aa9c" },
   { name: "Gemini",              icon: SiGooglegemini,     color: "#8E75B2" },
   { name: "Perplexity",          icon: SiPerplexity,       color: "#20808D" },
   { name: "Shopee",              icon: SiShopee,           color: "#EE4D2D" },
   { name: "TikTok Shop",         icon: SiTiktok,           color: "#FE2C55" },
   { name: "Ahrefs",                                        color: "#FF7043", textBadge: "Ah" },
-  { name: "Screaming Frog",                                color: "#7AC142", textBadge: "SF" },
-  { name: "Lazada",                                        color: "#0F146D", textBadge: "Lzd" },
+  { name: "Screaming Frog",      imgSrc: screamingFrogImg, color: "#7AC142", imgBg: "#FFFFFF" },
+  { name: "Lazada",              imgSrc: lazadaImg,        color: "#0F146D" },
 ];
 
 export function Skills() {
@@ -109,7 +114,18 @@ export function Skills() {
                     transition-all duration-300 cursor-default group"
                   data-testid={`tool-${tool.name.toLowerCase().replace(/\s+/g, "-")}`}
                 >
-                  {tool.icon ? (
+                  {tool.imgSrc ? (
+                    <div
+                      className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center shrink-0"
+                      style={tool.imgBg ? { backgroundColor: tool.imgBg, padding: "3px" } : undefined}
+                    >
+                      <img
+                        src={tool.imgSrc}
+                        alt={tool.name}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  ) : tool.icon ? (
                     <tool.icon
                       className="w-10 h-10 opacity-80 group-hover:opacity-100 transition-opacity duration-200"
                       style={{ color: tool.color } as React.CSSProperties}
