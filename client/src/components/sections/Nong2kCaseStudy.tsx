@@ -9,6 +9,7 @@ import {
 import { Reveal } from "../ui/Reveal";
 import companyLogo from "@assets/Thiết_kế_chưa_có_tên_(7)_1773172173267.png";
 import gscPerformance from "@assets/image_1773174798056.png";
+import performanceOverview from "@assets/Screenshot_2026-03-11_040441_1773176713667.png";
 
 /* ──────────────────────────────────────────────────
    To add a real screenshot: import the file and assign it below.
@@ -17,7 +18,7 @@ import gscPerformance from "@assets/image_1773174798056.png";
 ────────────────────────────────────────────────── */
 const images = {
   logo:                companyLogo as string | null,
-  performanceOverview: null as string | null,  // Main performance screenshot
+  performanceOverview: performanceOverview as string | null,
   semrushData:         null as string | null,  // Optional SEMrush screenshot
   gscPerformance:      gscPerformance as string | null,
   gscKeywords:         null as string | null,
