@@ -8,13 +8,14 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
+import companyLogo from "@assets/logo-01_nobg.png";
 
 /* ──────────────────────────────────────────────────
    Replace these URLs with real screenshot paths when available.
    Recommended size: 1200×675px (16:9)
 ────────────────────────────────────────────────── */
 const images = {
-  logo: null as string | null,
+  logo: companyLogo as string | null,
   beforeAnalytics: null as string | null,
   beforeSemrush: null as string | null,
   afterAnalytics: null as string | null,
