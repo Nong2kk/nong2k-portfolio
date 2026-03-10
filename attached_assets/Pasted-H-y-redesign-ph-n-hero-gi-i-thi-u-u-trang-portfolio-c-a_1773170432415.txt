@@ -1,0 +1,92 @@
+Hãy redesign phần hero / giới thiệu đầu trang portfolio của tôi theo bố cục lấy cảm hứng từ editorial portfolio hiện đại, nhưng vẫn phù hợp với một SEO & Digital Marketing portfolio.
+
+Yêu cầu quan trọng:
+- KHÔNG dùng font nghệ thuật như ảnh tham chiếu
+- Giữ font hiện tại của portfolio hoặc dùng font hiện đại, dễ đọc, phù hợp với website hiện tại
+- Tôi chỉ muốn lấy cảm hứng về BỐ CỤC, không copy nguyên style designer portfolio
+- Hình ảnh mẫu tôi sẽ tự thay sau, nên hãy dùng placeholder image hợp lý
+- Thiết kế cần chuyên nghiệp, nổi bật, hiện đại, nhưng vẫn dễ đọc và phù hợp với recruiter
+
+Mục tiêu:
+- Làm phần giới thiệu đầu trang nổi bật hơn nhiều so với layout hiện tại
+- Tạo cảm giác cao cấp, có cá tính, có điểm nhấn thị giác
+- Vẫn giữ được định vị của một SEO & Digital Marketing Specialist
+- Responsive tốt trên desktop, tablet và mobile
+
+Bố cục mong muốn:
+
+
+2. Hero layout dạng editorial
+- Một headline lớn, mạnh, rõ ràng
+- Có thể chia thành nhiều dòng để tạo bố cục đẹp
+- Headline cần dùng font hiện tại hoặc font sans-serif hiện đại, không dùng font quá nghệ thuật
+- Có thể dùng text outline, text background hoặc layer text nhẹ để tạo chiều sâu, nhưng vẫn phải dễ đọc
+
+3. Ảnh cá nhân
+- Một khung ảnh lớn, đặt lệch bố cục để tạo điểm nhấn
+- Ảnh có thể chồng lên một phần nền hoặc text
+- Có thể thêm border, shape, glow nhẹ hoặc nền block phía sau để ảnh nổi bật hơn
+- Tôi sẽ tự thay ảnh sau, nên dùng ảnh placeholder
+
+4. Nội dung giới thiệu ngắn
+- Một đoạn intro ngắn 2–3 dòng, đặt gần ảnh hoặc phía dưới headline
+- Nội dung theo hướng:
+  “SEO & Digital Marketing Specialist với hơn 2 năm kinh nghiệm. Tập trung vào Content SEO, Topic Cluster, tối ưu website và phân tích dữ liệu để tăng trưởng organic traffic bền vững.”
+- Trình bày gọn, dễ scan
+
+5. CTA trong hero
+- Có ít nhất 2 nút:
+  - Xem dự án
+  - Liên hệ
+- Nút cần nổi bật nhưng không quá chói
+- Đồng bộ với dark theme hiện tại
+
+6. Shape / decorative elements
+- Có thể thêm 1 số shape trang trí nhẹ như:
+  - star
+  - line
+  - gradient blur
+  - floating badge
+- Chỉ dùng vừa đủ để tạo điểm nhấn, không được làm rối
+
+7. Phong cách thiết kế
+- Giữ dark theme hoặc dark premium tone
+- Tối giản nhưng nổi bật
+- Có layering, chiều sâu, khoảng trắng đẹp
+- Nhìn giống một portfolio hiện đại, không quá corporate
+- Không quá thiên về art/design portfolio
+- Phù hợp với người làm SEO, Digital Marketing, Growth
+
+8. Typography
+- Giữ font hiện tại nếu phù hợp
+- Nếu cần đổi, chỉ dùng font hiện đại dễ đọc, hợp với tone portfolio công nghệ / marketing
+- Heading lớn, mạnh
+- Body text rõ ràng, dễ đọc
+- Không dùng font serif nghệ thuật như ảnh tham chiếu
+
+9. Responsive
+- Desktop: bố cục lệch có chủ đích, nổi bật
+- Tablet: cân lại layout nhưng vẫn giữ điểm nhấn
+- Mobile: chuyển thành bố cục dọc gọn gàng, không bị vỡ
+- Headline không được quá lớn trên mobile
+- Ảnh không che nội dung
+
+10. Yêu cầu kỹ thuật
+- Sử dụng React + Tailwind
+- Code sạch, dễ chỉnh sửa
+- Có thể dùng absolute positioning, z-index, gradient blur, and Framer Motion nếu cần animation nhẹ
+- Không lạm dụng animation
+- Ưu tiên hiệu ứng hover và fade-in nhẹ khi load
+
+11. Lưu ý quan trọng
+- Không copy nguyên ảnh tham chiếu
+- Chỉ lấy cảm hứng về bố cục editorial, layering và điểm nhấn thị giác
+- Thiết kế phải phù hợp với portfolio hiện tại của tôi
+- Giữ cảm giác chuyên nghiệp để phục vụ mục tiêu tuyển dụng
+- Hero section phải giúp recruiter nhìn vào là thấy tôi nổi bật hơn portfolio thông thường
+
+Sau khi hoàn thành:
+- cập nhật JSX/HTML của hero section
+- cập nhật className/Tailwind tương ứng
+- đảm bảo section nhìn đẹp trên dark theme hiện tại
+- giữ khả năng thay ảnh dễ dàng về sau
