@@ -29,29 +29,29 @@ const semrushMetrics = [
   {
     icon: <TrendingUp className="w-5 h-5" />,
     title: "Organic Traffic",
-    value: "+XX%",
-    desc: "Tăng trưởng traffic tự nhiên trong thời gian dự án",
+    value: "15.000+",
+    desc: "Lượt truy cập tự nhiên/tháng, tăng +18% trong thời gian dự án",
     color: "from-primary to-[#60A5FA]",
   },
   {
     icon: <Award className="w-5 h-5" />,
     title: "Authority Score",
-    value: "XX → XX",
-    desc: "Cải thiện chỉ số authority của tên miền",
+    value: "14",
+    desc: "Cải thiện thông qua tối ưu nội dung và xây dựng liên kết",
     color: "from-[#60A5FA] to-secondary",
   },
   {
     icon: <Target className="w-5 h-5" />,
     title: "Ranking Keywords",
-    value: "+XXX",
-    desc: "Từ khóa mới vào top 100 kết quả tìm kiếm",
+    value: "6.700+",
+    desc: "Từ khóa tự nhiên đang xếp hạng trên Google",
     color: "from-secondary to-purple-400",
   },
   {
     icon: <Link className="w-5 h-5" />,
     title: "Backlinks",
-    value: "+XX",
-    desc: "Backlink chất lượng được xây dựng",
+    value: "9.200",
+    desc: "Backlinks từ 248 domain, hỗ trợ tăng độ uy tín website",
     color: "from-purple-400 to-primary",
   },
 ];
@@ -180,7 +180,8 @@ export function Nong2kCaseStudy() {
             <div>
               <SectionBadge color="from-primary to-[#60A5FA]">SEO Performance Overview</SectionBadge>
               <p className="text-muted-foreground text-sm md:text-base leading-relaxed mt-5 max-w-2xl">
-                Dashboard tổng hợp cho thấy sự cải thiện về lưu lượng tự nhiên, mức độ hiển thị từ khóa và hiệu suất SEO tổng thể sau quá trình tối ưu.
+                Sau khi tiếp nhận dự án từ 03/2025, website được tối ưu on-page, cấu trúc nội dung và chiến lược từ khóa.
+                Organic traffic đạt khoảng 15K/tháng (+18%), với 6.7K từ khóa tự nhiên và 9.2K backlinks từ 248 domain, cho thấy sự cải thiện rõ rệt về độ phủ từ khóa và mức độ hiển thị.
               </p>
             </div>
 
