@@ -71,13 +71,6 @@ const intentColors: Record<string, string> = {
   Navigational:  "text-secondary bg-secondary/10 border-secondary/20",
 };
 
-const performanceHighlights = [
-  "Tăng trưởng organic traffic đáng kể sau tối ưu",
-  "Cải thiện thứ hạng từ khóa mục tiêu trên Google",
-  "Tăng lượt hiển thị và lượt click từ Search Console",
-  "Mở rộng phủ sóng từ khóa tự nhiên theo cụm chủ đề",
-];
-
 /* ── Shared sub-components ── */
 function SectionBadge({ children, color = "from-primary to-[#60A5FA]" }: { children: React.ReactNode; color?: string }) {
   return (
@@ -212,18 +205,6 @@ export function Nong2kCaseStudy() {
               </div>
             </div>
 
-            {/* Key highlights */}
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">Key Highlights</p>
-              <ul className="grid sm:grid-cols-2 gap-3">
-                {performanceHighlights.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                    <span className="text-sm text-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </Reveal>
 
