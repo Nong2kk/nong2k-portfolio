@@ -61,12 +61,14 @@ const tools: {
   { name: "Google Tag Manager",  icon: SiGoogletagmanager, color: "#4285F4" },
   { name: "WordPress",           icon: SiWordpress,        color: "#21759B" },
   { name: "Canva",               icon: SiCanva,            color: "#00C4CC" },
+  { name: "CapCut",                                        color: "#1C1C1E", textBadge: "CC" },
   { name: "ChatGPT",             icon: SiOpenai,           color: "#74aa9c" },
   { name: "Gemini",              icon: SiGooglegemini,     color: "#8E75B2" },
   { name: "Perplexity",          icon: SiPerplexity,       color: "#20808D" },
   { name: "Shopee",              icon: SiShopee,           color: "#EE4D2D" },
   { name: "TikTok Shop",         icon: SiTiktok,           color: "#FE2C55" },
   { name: "Ahrefs",                                        color: "#FF7043", textBadge: "Ah" },
+  { name: "Screaming Frog",                                color: "#7AC142", textBadge: "SF" },
   { name: "Lazada",                                        color: "#0F146D", textBadge: "Lzd" },
 ];
 
