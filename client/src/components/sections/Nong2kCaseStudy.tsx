@@ -11,6 +11,7 @@ import { Reveal } from "../ui/Reveal";
 import companyLogo from "@assets/Thiết_kế_chưa_có_tên_(7)_1773172173267.png";
 import semrushBefore from "@assets/image_1773173760503.png";
 import semrushAfter from "@assets/image_1773173888107.png";
+import gscPerformance from "@assets/image_1773174798056.png";
 
 /* ──────────────────────────────────────────────────
    Replace these URLs with real screenshot paths when available.
@@ -22,7 +23,7 @@ const images = {
   beforeSemrush: semrushBefore as string | null,
   afterAnalytics: null as string | null,
   afterSemrush: semrushAfter as string | null,
-  gscPerformance: null as string | null,
+  gscPerformance: gscPerformance as string | null,
   gscKeywords: null as string | null,
 };
 
