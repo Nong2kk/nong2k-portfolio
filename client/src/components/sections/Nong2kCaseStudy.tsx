@@ -23,7 +23,6 @@ const images = {
   performanceOverview: performanceOverview as string | null,
   semrushData:         null as string | null,  // Optional SEMrush screenshot
   gscPerformance:      gscPerformance as string | null,
-  gscKeywords:         null as string | null,
   aiOverview:          aiOverviewImg as string | null,
 };
 
@@ -285,25 +284,53 @@ export function Nong2kCaseStudy() {
 
         {/* ── Block 5: Google Search Console ── */}
         <Reveal delay={0.1}>
-          <div className="glass-card rounded-3xl p-8 md:p-10 border border-border/40 space-y-6 relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-8 md:p-10 border border-border/40 space-y-7 relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#60A5FA]/40 to-transparent" />
 
-            <div>
+            {/* Header */}
+            <div className="space-y-3">
               <SectionBadge color="from-[#60A5FA] to-primary">Google Search Console</SectionBadge>
-              <h3 className="text-lg font-bold text-foreground mt-4 mb-1">Google Search Console Performance</h3>
+              <h3 className="text-lg font-bold text-foreground">Google Search Console Performance</h3>
               <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl">
-                Dữ liệu từ Google Search Console cho thấy sự cải thiện về lượt hiển thị, lượt click và mức độ hiển thị từ khóa sau khi tối ưu SEO.
+                Dữ liệu so sánh trên Google Search Console cho thấy hiệu quả SEO cải thiện rõ rệt trong giai đoạn{" "}
+                <span className="font-semibold text-foreground">05/2025 – 10/2025</span> so với{" "}
+                <span className="font-semibold text-foreground">11/2024 – 04/2025</span>. Tổng lượt nhấp tăng từ{" "}
+                <span className="font-semibold text-primary">103K lên 128K</span>, lượt hiển thị tăng từ{" "}
+                <span className="font-semibold text-primary">2.65M lên 3.54M</span>, đồng thời vị trí trung bình cải thiện từ{" "}
+                <span className="font-semibold text-green-400">9.2 xuống 7.9</span>, cho thấy mức độ hiển thị và khả năng thu hút truy cập tự nhiên được cải thiện tích cực.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-5" data-testid="gsc-screenshots">
+            {/* Single full-width screenshot */}
+            <div data-testid="gsc-screenshot">
               {images.gscPerformance
-                ? <img src={images.gscPerformance} alt="GSC Performance Graph" className="w-full rounded-xl shadow" />
-                : <ImagePlaceholder label="GSC Performance Graph" hint="Biểu đồ tổng quan (clicks, impressions, CTR, position)" />}
-              {images.gscKeywords
-                ? <img src={images.gscKeywords} alt="GSC Keyword Rankings" className="w-full rounded-xl shadow" />
-                : <ImagePlaceholder label="GSC Keyword Rankings" hint="Bảng từ khóa xếp hạng trên Search Console" />}
+                ? <img src={images.gscPerformance} alt="Google Search Console – Performance Comparison" className="w-full rounded-2xl shadow-lg border border-border/20" />
+                : <ImagePlaceholder label="GSC Performance Graph" hint="Biểu đồ tổng quan (clicks, impressions, CTR, position)" tall />}
             </div>
+
+            {/* Metrics highlight strip */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {[
+                { label: "Clicks",            before: "103K",  after: "128K",  up: true  },
+                { label: "Impressions",       before: "2.65M", after: "3.54M", up: true  },
+                { label: "Avg. Position",     before: "9.2",   after: "7.9",   up: true  },
+                { label: "CTR",               before: "3.9%",  after: "3.6%",  up: false },
+              ].map((m) => (
+                <div key={m.label} className="p-4 rounded-2xl bg-card/50 border border-border/40 space-y-1.5">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{m.label}</p>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="text-sm text-muted-foreground">{m.before}</span>
+                    <span className="text-xs text-muted-foreground/50">→</span>
+                    <span className={`text-sm font-bold ${m.up ? "text-green-400" : "text-muted-foreground"}`}>{m.after}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* CTR note */}
+            <p className="text-xs text-muted-foreground/60 leading-relaxed -mt-2">
+              * CTR giảm nhẹ do lượt hiển thị tăng nhanh hơn lượt click, nhưng tổng lượt click và mức độ hiển thị vẫn tăng trưởng tích cực.
+            </p>
           </div>
         </Reveal>
 
