@@ -192,6 +192,26 @@ export function Nong2kCaseStudy() {
                 : <ImagePlaceholder label="SEO Performance Dashboard" hint="Ảnh chụp tổng quan hiệu suất (GA4, GSC, hoặc SEMrush)" tall />}
             </div>
 
+            {/* SEO Insight card */}
+            <div className="flex items-start gap-4 p-5 rounded-2xl bg-primary/5 border border-primary/15 border-l-[3px] border-l-primary">
+              <div className="mt-0.5 p-2 rounded-xl bg-primary/15 shrink-0">
+                <TrendingUp className="w-4 h-4 text-primary" />
+              </div>
+              <div>
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-primary mb-2">SEO Insight</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Sau khi tối ưu{" "}
+                  <span className="font-semibold text-foreground">on-page</span>,{" "}
+                  <span className="font-semibold text-foreground">topic cluster</span> và{" "}
+                  <span className="font-semibold text-foreground">internal linking</span>{" "}
+                  <span className="font-semibold text-primary">từ 03/2025</span>, số lượng từ khóa{" "}
+                  <span className="font-semibold text-green-400">Top 10</span> tăng mạnh{" "}
+                  <span className="font-semibold text-primary">từ cuối 2025</span>, cho thấy sự cải thiện rõ rệt về mức độ hiển thị và khả năng cạnh tranh trên{" "}
+                  <span className="font-semibold text-foreground">SERP</span>.
+                </p>
+              </div>
+            </div>
+
             {/* Key highlights */}
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">Key Highlights</p>
