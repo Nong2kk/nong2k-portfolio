@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import companyLogo from "@assets/Thiết_kế_chưa_có_tên_(7)_1773172173267.png";
-import gscPerformance from "@assets/image_1773174798056.png";
+import gscPerformance from "@assets/Screenshot_2026-03-11_040807_1773178047749.png";
 import performanceOverview from "@assets/Screenshot_2026-03-11_040441_1773176713667.png";
 
 /* ──────────────────────────────────────────────────
