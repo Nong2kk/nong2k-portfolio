@@ -91,7 +91,7 @@ export function Skills() {
             </h2>
             <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-secondary rounded-full" />
             <p className="text-muted-foreground mt-6 max-w-xl text-base md:text-lg">
-              Từ nghiên cứu, lên kế hoạch đến triển khai và đo lường — kết hợp tư duy chiến lược và khả năng thực thi.
+              Công cụ hỗ trợ nghiên cứu, triển khai và sáng tạo nội dung.
             </p>
           </div>
         </Reveal>
@@ -100,8 +100,6 @@ export function Skills() {
         <Reveal delay={0.1}>
           <div className="mb-16">
             <div className="mb-8 flex flex-col md:items-center md:text-center">
-              <h3 className="text-xl font-bold text-foreground mb-1.5">Công cụ & Nền tảng</h3>
-              <p className="text-sm text-muted-foreground">Công cụ hỗ trợ nghiên cứu, triển khai và sáng tạo nội dung</p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

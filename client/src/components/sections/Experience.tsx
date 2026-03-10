@@ -6,7 +6,7 @@ const experiences = [
     role: "Marketing Executive",
     company: "Công ty Hoàng Long Vũ",
     type: "Toàn thời gian",
-    period: "2023 – Hiện tại",
+    period: "2025 – 2026",
     summary: "Phụ trách toàn bộ hoạt động SEO và content marketing cho website doanh nghiệp, từ chiến lược đến triển khai và đo lường.",
     bullets: [
       "Nghiên cứu từ khóa và xây dựng hệ thống topic cluster theo mô hình pillar–cluster, giúp website phủ rộng chủ đề và tăng độ quyền tự nhiên.",
@@ -19,7 +19,7 @@ const experiences = [
     role: "Marketing Intern",
     company: "Kien Xanh Design",
     type: "Dự án Freelance",
-    period: "2022 – 2023",
+    period: "2024 – 2025",
     summary: "Hỗ trợ đội ngũ marketing trong việc sản xuất nội dung SEO và tối ưu trải nghiệm người dùng trên website.",
     bullets: [
       "Nghiên cứu từ khóa và viết bài chuẩn SEO theo brief, đảm bảo nội dung khớp với search intent và dễ đọc.",
@@ -31,7 +31,7 @@ const experiences = [
     role: "Freelance – Tối ưu Thương mại Điện tử",
     company: "Nến Thơm Hafu",
     type: "Dự án freelance",
-    period: "2023",
+    period: "2023- Hiện tại",
     summary: "Tối ưu toàn bộ gian hàng thương mại điện tử trên các sàn lớn nhằm cải thiện khả năng hiển thị và tỉ lệ chuyển đổi.",
     bullets: [
       "Đánh giá lại cấu trúc danh mục, tên sản phẩm và từ khóa tìm kiếm — tối ưu theo thuật toán từng sàn (Shopee, TikTok Shop).",
