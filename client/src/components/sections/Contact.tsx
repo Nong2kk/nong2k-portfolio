@@ -73,7 +73,7 @@ export function Contact() {
             </h2>
             <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-transparent rounded-full mx-auto" />
             <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
-              Nếu bạn đang tìm kiếm một Digital Marketer có kinh nghiệm SEO, Content Strategy và tối ưu hiệu suất website, mình luôn sẵn sàng kết nối và trao đổi để cùng tạo ra giá trị tăng trưởng cho doanh nghiệp.
+              Nếu bạn đang tìm kiếm một SEO & Digital Marketing Specialist có kinh nghiệm về SEO, Content Strategy và tối ưu hiệu suất website, mình luôn sẵn sàng kết nối để trao đổi về các cơ hội hợp tác hoặc dự án mới.
             </p>
           </div>
         </Reveal>

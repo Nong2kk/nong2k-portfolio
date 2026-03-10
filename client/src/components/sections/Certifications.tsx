@@ -3,15 +3,15 @@ import { Reveal } from "../ui/Reveal";
 
 const certifications = [
   {
-    title: "SEO Content Practice Certificate",
+    title: "Digital Marketing Strategy Practice",
     issuer: "FPT Polytechnic",
     year: "2024",
-    description: "Khóa học thực hành xây dựng nội dung chuẩn SEO, nghiên cứu từ khóa, tối ưu Search Intent và triển khai bài viết tối ưu cho công cụ tìm kiếm.",
+    description: "Khóa học thực hành hoạch định chiến lược Digital Marketing, tập trung vào nghiên cứu thị trường, xây dựng kế hoạch nội dung và triển khai chiến dịch trên các kênh digital.",
     url: "https://xuongthuchanh.poly.edu.vn/certificate/PS29378/65e7dd734816ab157729d7a7"
   },
   {
     title: "SEO Optimization Certificate",
-    issuer: "SEMrush Academy",
+    issuer: "FPT Polytechnic",
     year: "2023",
     description: "Kỹ thuật SEO chuyên sâu: nghiên cứu từ khóa, tối ưu on-page, backlink và đo lường hiệu suất tìm kiếm tự nhiên.",
     url: "https://xuongthuchanh.poly.edu.vn/certificate/PS29378/664da35eda2249cdbb965b3e"
