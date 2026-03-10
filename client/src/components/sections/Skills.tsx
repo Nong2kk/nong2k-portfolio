@@ -49,29 +49,35 @@ const skillCategories = [
   },
 ];
 
-const tools: { name: string; icon?: React.ComponentType<{ className?: string }>; color: string; textBadge?: string }[] = [
-  { name: "SEMrush",                icon: SiSemrush,         color: "#FF642D" },
-  { name: "Ahrefs",                                          color: "#FF7043", textBadge: "Ah" },
-  { name: "Google Analytics 4",     icon: SiGoogleanalytics, color: "#E37400" },
-  { name: "Google Search Console",                           color: "#4285F4", textBadge: "GSC" },
-  { name: "Google Tag Manager",     icon: SiGoogletagmanager,color: "#4285F4" },
-  { name: "WordPress",              icon: SiWordpress,       color: "#21759B" },
-  { name: "Canva",                  icon: SiCanva,           color: "#00C4CC" },
-  { name: "ChatGPT",                icon: SiOpenai,          color: "#74aa9c" },
-  { name: "Gemini",                 icon: SiGooglegemini,    color: "#8E75B2" },
-  { name: "Perplexity",             icon: SiPerplexity,      color: "#20808D" },
-  { name: "Shopee",                 icon: SiShopee,          color: "#EE4D2D" },
-  { name: "TikTok Shop",            icon: SiTiktok,          color: "#FE2C55" },
-  { name: "Lazada",                                          color: "#0F146D", textBadge: "Lzd" },
+const tools: {
+  name: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  color: string;
+  textBadge?: string;
+}[] = [
+  { name: "SEMrush",              icon: SiSemrush,          color: "#FF642D" },
+  { name: "Google Analytics 4",  icon: SiGoogleanalytics,  color: "#E37400" },
+  { name: "Google Search Console",                          color: "#4285F4", textBadge: "GSC" },
+  { name: "Google Tag Manager",  icon: SiGoogletagmanager, color: "#4285F4" },
+  { name: "WordPress",           icon: SiWordpress,        color: "#21759B" },
+  { name: "Canva",               icon: SiCanva,            color: "#00C4CC" },
+  { name: "ChatGPT",             icon: SiOpenai,           color: "#74aa9c" },
+  { name: "Gemini",              icon: SiGooglegemini,     color: "#8E75B2" },
+  { name: "Perplexity",          icon: SiPerplexity,       color: "#20808D" },
+  { name: "Shopee",              icon: SiShopee,           color: "#EE4D2D" },
+  { name: "TikTok Shop",         icon: SiTiktok,           color: "#FE2C55" },
+  { name: "Ahrefs",                                        color: "#FF7043", textBadge: "Ah" },
+  { name: "Lazada",                                        color: "#0F146D", textBadge: "Lzd" },
 ];
 
 export function Skills() {
   return (
     <section id="skills" className="py-24 relative bg-card/30 border-y border-border/50">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        {/* Header */}
+
+        {/* ── Section Header ── */}
         <Reveal>
-          <div className="mb-16 flex flex-col md:items-center md:text-center">
+          <div className="mb-14 flex flex-col md:items-center md:text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">Năng lực</p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4 font-display">
               Kỹ năng <span className="text-gradient">& Công cụ</span>
@@ -83,11 +89,60 @@ export function Skills() {
           </div>
         </Reveal>
 
-        {/* Skill Categories */}
-        <div className="grid md:grid-cols-3 gap-5 mb-12">
+        {/* ── Tools & Platforms (PRIMARY) ── */}
+        <Reveal delay={0.1}>
+          <div className="mb-16">
+            <div className="mb-8 flex flex-col md:items-center md:text-center">
+              <h3 className="text-xl font-bold text-foreground mb-1.5">Công cụ & Nền tảng</h3>
+              <p className="text-sm text-muted-foreground">Công cụ hỗ trợ nghiên cứu, triển khai và sáng tạo nội dung</p>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              {tools.map((tool, idx) => (
+                <div
+                  key={idx}
+                  className="glass-card flex flex-col items-center justify-center gap-3 p-6 rounded-2xl
+                    border border-border/40 hover:border-primary/40 hover:bg-primary/[0.04]
+                    hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10
+                    transition-all duration-300 cursor-default group"
+                  data-testid={`tool-${tool.name.toLowerCase().replace(/\s+/g, "-")}`}
+                >
+                  {tool.icon ? (
+                    <tool.icon
+                      className="w-10 h-10 opacity-80 group-hover:opacity-100 transition-opacity duration-200"
+                      style={{ color: tool.color } as React.CSSProperties}
+                    />
+                  ) : (
+                    <div
+                      className="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold text-white shrink-0 shadow-sm"
+                      style={{ backgroundColor: tool.color }}
+                    >
+                      {tool.textBadge}
+                    </div>
+                  )}
+                  <span className="text-xs font-semibold text-muted-foreground group-hover:text-foreground text-center leading-tight transition-colors">
+                    {tool.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+
+        {/* ── Divider ── */}
+        <Reveal delay={0.15}>
+          <div className="flex items-center gap-4 mb-12">
+            <div className="flex-1 h-px bg-border/50" />
+            <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground/50 px-2">Kỹ năng chuyên môn</span>
+            <div className="flex-1 h-px bg-border/50" />
+          </div>
+        </Reveal>
+
+        {/* ── Skill Categories (SECONDARY) ── */}
+        <div className="grid md:grid-cols-3 gap-5">
           {skillCategories.map((category, idx) => (
             <Reveal key={idx} delay={0.1 * idx}>
-              <div className="glass-card p-6 rounded-2xl h-full">
+              <div className="glass-card p-6 rounded-2xl h-full border border-border/40">
                 <div className="mb-5 pb-4 border-b border-border/50">
                   <h3 className="text-base font-bold font-display text-foreground">{category.title}</h3>
                   <p className="text-xs text-muted-foreground mt-1">{category.description}</p>
@@ -115,42 +170,6 @@ export function Skills() {
           ))}
         </div>
 
-        {/* Tools & Platforms */}
-        <Reveal delay={0.3}>
-          <div className="glass-card p-6 md:p-8 rounded-2xl">
-            <div className="mb-6 pb-4 border-b border-border/50">
-              <h3 className="text-base font-bold font-display text-foreground">Công cụ & Nền tảng</h3>
-              <p className="text-xs text-muted-foreground mt-1">Công cụ hỗ trợ nghiên cứu, triển khai và sáng tạo</p>
-            </div>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3">
-              {tools.map((tool, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col items-center gap-2 p-3 rounded-xl bg-background border border-border
-                    hover:border-primary/40 hover:bg-primary/[0.04] hover:scale-[1.04]
-                    transition-all duration-200 cursor-default group"
-                >
-                  {tool.icon ? (
-                    <tool.icon
-                      className="w-6 h-6 transition-opacity duration-200 group-hover:opacity-100 opacity-80"
-                      style={{ color: tool.color } as React.CSSProperties}
-                    />
-                  ) : (
-                    <div
-                      className="w-6 h-6 rounded-md flex items-center justify-center text-[10px] font-bold text-white shrink-0"
-                      style={{ backgroundColor: tool.color }}
-                    >
-                      {tool.textBadge}
-                    </div>
-                  )}
-                  <span className="text-[10px] font-medium text-muted-foreground group-hover:text-foreground text-center leading-tight transition-colors">
-                    {tool.name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
