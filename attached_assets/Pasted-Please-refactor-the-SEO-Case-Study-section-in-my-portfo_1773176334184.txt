@@ -1,0 +1,99 @@
+Please refactor the SEO Case Study section in my portfolio and simplify it further.
+
+I want to REMOVE the "Challenge" section completely.
+
+Goal:
+Make the SEO project section cleaner, more minimal, and easier to scan.
+
+Requirements:
+
+1. Remove the "Challenge" block entirely
+Delete:
+- the "Challenge" badge
+- the challenge paragraph
+- any related spacing or layout
+
+2. Keep these sections only:
+- Company Overview
+- SEO Performance Overview
+- SEMrush Data
+- Top Keyword Ranking Achievements
+- Google Search Console Data
+
+3. Simplify the performance section
+Remove the Before / After comparison layout completely.
+
+Replace it with:
+- one section title: "SEO Performance Overview"
+- one short description
+- one large screenshot placeholder
+- a short list of key highlights below it
+
+Example structure:
+
+SEO Performance Overview
+
+This dashboard highlights the improvement in organic traffic, keyword visibility, and overall SEO performance after optimization.
+
+[ Large Screenshot Placeholder ]
+
+Key Highlights
+- Organic traffic growth
+- Improved keyword rankings
+- Increased search impressions
+- Better overall search visibility
+
+4. Company Overview block
+Keep the company intro section for:
+
+Company: Vi Na Hoàng Long Vũ
+
+Use a short professional description and logo placeholder.
+
+5. SEMrush Data block
+Keep a metrics card/grid layout for:
+- Organic Traffic
+- Authority Score
+- Ranking Keywords
+- Backlinks
+
+Use placeholder values only.
+
+6. Top Keyword Ranking Achievements block
+Keep a clean keyword ranking table or grid with placeholders.
+
+Example columns:
+- Keyword
+- Ranking Position
+- Search Intent
+
+7. Google Search Console Data block
+Keep this section with:
+- title
+- short description
+- image placeholder(s)
+
+8. Design requirements
+- Keep the portfolio dark theme
+- Clean spacing
+- Rounded cards
+- Minimal and professional case study style
+- Responsive on desktop and mobile
+- Do not make the layout cluttered
+
+9. Technical requirements
+- React + Tailwind CSS
+- Clean component structure
+- Easy for me to replace content and screenshots later
+- Keep consistent typography with the rest of my portfolio
+
+10. Important
+Do not hardcode real performance data.
+Use placeholders for:
+- company logo
+- screenshots
+- SEMrush numbers
+- keyword rankings
+- GSC data
+
+The final result should look like a modern SEO case study section, clean and professional, without the Challenge section and without Before/After comparison.
