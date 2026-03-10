@@ -5,11 +5,13 @@ import {
   Link,
   Award,
   CheckCircle2,
+  Sparkles,
 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import companyLogo from "@assets/Thiết_kế_chưa_có_tên_(7)_1773172173267.png";
 import gscPerformance from "@assets/Screenshot_2026-03-11_040807_1773178047749.png";
 import performanceOverview from "@assets/Screenshot_2026-03-11_040441_1773176713667.png";
+import aiOverviewImg from "@assets/image_1773179527780.png";
 
 /* ──────────────────────────────────────────────────
    To add a real screenshot: import the file and assign it below.
@@ -22,6 +24,7 @@ const images = {
   semrushData:         null as string | null,  // Optional SEMrush screenshot
   gscPerformance:      gscPerformance as string | null,
   gscKeywords:         null as string | null,
+  aiOverview:          aiOverviewImg as string | null,
 };
 
 /* ── Data ── */
@@ -56,20 +59,12 @@ const semrushMetrics = [
   },
 ];
 
-const keywordRankings = [
-  { keyword: "[Industrial product keyword]", position: "Top 3",  intent: "Commercial",   improvement: "↑ 47 vị trí" },
-  { keyword: "[Product category keyword]",   position: "Top 5",  intent: "Informational", improvement: "↑ 32 vị trí" },
-  { keyword: "[Long tail keyword]",          position: "Top 1",  intent: "Transactional", improvement: "↑ 90+ vị trí" },
-  { keyword: "[Commercial solution keyword]",position: "Top 10", intent: "Commercial",   improvement: "↑ 21 vị trí" },
-  { keyword: "[Brand + service keyword]",    position: "Top 3",  intent: "Navigational", improvement: "↑ 55 vị trí" },
+const aiObservations = [
+  'Brand "Hoàng Long Vũ" được trích dẫn trực tiếp trong AI Overview',
+  "Bài viết xuất hiện trong phần nguồn tham khảo của Google AI",
+  "Nội dung được Google AI sử dụng làm nguồn tổng hợp thông tin",
+  "Tăng brand visibility và trust trên SERP",
 ];
-
-const intentColors: Record<string, string> = {
-  Commercial:    "text-primary bg-primary/10 border-primary/20",
-  Informational: "text-[#60A5FA] bg-[#60A5FA]/10 border-[#60A5FA]/20",
-  Transactional: "text-green-400 bg-green-400/10 border-green-400/20",
-  Navigational:  "text-secondary bg-secondary/10 border-secondary/20",
-};
 
 /* ── Shared sub-components ── */
 function SectionBadge({ children, color = "from-primary to-[#60A5FA]" }: { children: React.ReactNode; color?: string }) {
@@ -231,46 +226,59 @@ export function Nong2kCaseStudy() {
           </div>
         </Reveal>
 
-        {/* ── Block 4: Keyword Rankings ── */}
+        {/* ── Block 4: AI Overview Visibility ── */}
         <Reveal delay={0.1}>
-          <div className="glass-card rounded-3xl p-8 md:p-10 border border-border/40 space-y-6">
-            <SectionBadge color="from-primary to-[#60A5FA]">Keyword Rankings</SectionBadge>
-            <h3 className="text-lg font-bold text-foreground">Top Keyword Ranking Achievements</h3>
+          <div className="glass-card rounded-3xl p-8 md:p-10 border border-secondary/20 space-y-6 relative overflow-hidden" data-testid="ai-overview-section">
+            {/* Top accent line */}
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/50 to-transparent" />
 
-            <div className="overflow-x-auto -mx-2 px-2">
-              <table className="w-full text-sm min-w-[520px]" data-testid="keyword-rankings-table">
-                <thead>
-                  <tr className="border-b border-border/60">
-                    <th className="text-left py-3 pr-4 text-xs font-bold uppercase tracking-wider text-muted-foreground">Keyword</th>
-                    <th className="text-center py-3 px-4 text-xs font-bold uppercase tracking-wider text-muted-foreground">Position</th>
-                    <th className="text-center py-3 px-4 text-xs font-bold uppercase tracking-wider text-muted-foreground">Search Intent</th>
-                    <th className="text-right py-3 pl-4 text-xs font-bold uppercase tracking-wider text-muted-foreground">Improvement</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border/30">
-                  {keywordRankings.map((row, i) => (
-                    <tr key={i} className="hover:bg-primary/5 transition-colors">
-                      <td className="py-3.5 pr-4">
-                        <div className="flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                          <span className="text-foreground font-medium">{row.keyword}</span>
-                        </div>
-                      </td>
-                      <td className="py-3.5 px-4 text-center">
-                        <span className="font-bold text-primary">{row.position}</span>
-                      </td>
-                      <td className="py-3.5 px-4 text-center">
-                        <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold border ${intentColors[row.intent] ?? ""}`}>
-                          {row.intent}
-                        </span>
-                      </td>
-                      <td className="py-3.5 pl-4 text-right">
-                        <span className="text-green-400 font-bold text-xs">{row.improvement}</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            {/* Header */}
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <SectionBadge color="from-secondary to-purple-400">
+                  <Sparkles className="w-3 h-3" />
+                  AI Overview Visibility
+                </SectionBadge>
+              </div>
+              <h3 className="text-lg font-bold text-foreground pt-2">Google AI Overview – Real Case</h3>
+            </div>
+
+            {/* Screenshot */}
+            <div data-testid="ai-overview-screenshot">
+              {images.aiOverview
+                ? <img src={images.aiOverview} alt="Google AI Overview – Hoàng Long Vũ" className="w-full rounded-2xl shadow-lg border border-border/30" />
+                : <ImagePlaceholder label="Google AI Overview Screenshot" hint="Ảnh chụp AI Overview trên Google Search" />}
+            </div>
+
+            {/* Insight paragraph */}
+            <div className="flex items-start gap-4 p-5 rounded-2xl bg-secondary/5 border border-secondary/15 border-l-[3px] border-l-secondary">
+              <div className="mt-0.5 p-2 rounded-xl bg-secondary/15 shrink-0">
+                <Sparkles className="w-4 h-4 text-secondary" />
+              </div>
+              <div>
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-secondary mb-2">AI Insight</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Khi tìm kiếm từ khóa{" "}
+                  <span className="font-semibold text-foreground">'máy rửa xe gia đình chính hãng'</span>,{" "}
+                  Google AI Overview đã trích dẫn nội dung từ website{" "}
+                  <span className="font-semibold text-secondary">Hoàng Long Vũ</span>, đồng thời hiển thị bài viết trong phần nguồn tham khảo. Điều này cho thấy nội dung được tối ưu theo hướng{" "}
+                  <span className="font-semibold text-foreground">informational content</span>,{" "}
+                  <span className="font-semibold text-foreground">entity SEO</span> và cấu trúc rõ ràng, giúp Google AI dễ dàng tổng hợp và sử dụng làm nguồn thông tin.
+                </p>
+              </div>
+            </div>
+
+            {/* Key observations */}
+            <div>
+              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-muted-foreground mb-4">Key Observations</p>
+              <ul className="grid sm:grid-cols-2 gap-3">
+                {aiObservations.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-secondary mt-0.5 shrink-0" />
+                    <span className="text-sm text-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </Reveal>
