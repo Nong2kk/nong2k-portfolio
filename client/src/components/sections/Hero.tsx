@@ -9,14 +9,23 @@ const stats = [
   { value: "Analytics", label: "& Performance Tracking" },
 ];
 
-const marqueeKeywords = [
-  "SEO Kỹ thuật", "Content Strategy", "Topic Cluster", "Google Analytics 4",
-  "Search Intent", "On-page SEO", "Off-page SEO", "Keyword Research",
-  "E-commerce", "CRO", "Google Search Console", "Organic Growth", "Digital Marketing",
+const marqueeItems: { text: string; metric: boolean }[] = [
+  { text: "2+ Years SEO Experience",          metric: true  },
+  { text: "Topic Cluster Strategy",           metric: false },
+  { text: "5+ SEO Projects Completed",        metric: true  },
+  { text: "Semantic SEO",                     metric: false },
+  { text: "100+ Ranking Keywords on Google",  metric: true  },
+  { text: "AI Overview Optimization",         metric: false },
+  { text: "500+ Product Listings Optimized",  metric: true  },
+  { text: "Search Intent Optimization",       metric: false },
+  { text: "10+ On-page SEO Skills",           metric: true  },
+  { text: "SEO Content Planning",             metric: false },
+  { text: "E-commerce Marketing",             metric: false },
+  { text: "Product Image Editing",            metric: false },
 ];
 
 export function Hero() {
-  const keywords = [...marqueeKeywords, ...marqueeKeywords];
+  const items = [...marqueeItems, ...marqueeItems];
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden pt-20">
@@ -164,16 +173,24 @@ export function Hero() {
       </div>
 
       {/* Scrolling keyword marquee */}
-      <div className="relative border-t border-border/30 py-4 overflow-hidden">
-        <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-        <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
-        <div className="marquee-track flex gap-0 w-max">
-          {keywords.map((kw, i) => (
-            <span key={i} className="flex items-center gap-0">
-              <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/40 whitespace-nowrap px-5">
-                {kw}
+      <div className="relative border-t border-border/30 py-5 overflow-hidden">
+        <div className="absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-28 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+        <div className="marquee-track flex items-center gap-0 w-max">
+          {items.map((item, i) => (
+            <span key={i} className="flex items-center">
+              {item.metric ? (
+                <span className="whitespace-nowrap px-5 text-xs font-bold tracking-wide text-primary/75">
+                  {item.text}
+                </span>
+              ) : (
+                <span className="whitespace-nowrap px-5 text-xs font-medium uppercase tracking-widest text-muted-foreground/40">
+                  {item.text}
+                </span>
+              )}
+              <span className={`text-[10px] ${item.metric ? "text-primary/40" : "text-border/60"}`}>
+                {item.metric ? "★" : "·"}
               </span>
-              <span className="text-primary/30 text-xs">·</span>
             </span>
           ))}
         </div>
