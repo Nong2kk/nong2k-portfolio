@@ -1,4 +1,4 @@
-import { ArrowRight, Star, Sparkles } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import { motion } from "framer-motion";
 import profileImg from "@assets/IMG_8936_1773006924508.PNG";
@@ -9,15 +9,23 @@ const stats = [
   { value: "Analytics", label: "& Performance Tracking" },
 ];
 
-const heroStats = [
-  { value: "2+",   label: "Years Experience" },
-  { value: "5+",   label: "SEO Projects" },
-  { value: "100+", label: "Ranking Keywords" },
-  { value: "500+", label: "Listings Optimized" },
-  { value: "10+",  label: "SEO Skills" },
+const marqueeItems: { text: string; metric: boolean }[] = [
+  { text: "2+ Years SEO Experience",          metric: true  },
+  { text: "Topic Cluster Strategy",           metric: false },
+  { text: "5+ SEO Projects Completed",        metric: true  },
+  { text: "Semantic SEO",                     metric: false },
+  { text: "100+ Ranking Keywords on Google",  metric: true  },
+  { text: "AI Overview Optimization",         metric: false },
+  { text: "500+ Product Listings Optimized",  metric: true  },
+  { text: "Search Intent Optimization",       metric: false },
+  { text: "10+ On-page SEO Skills",           metric: true  },
+  { text: "SEO Content Planning",             metric: false },
+  { text: "E-commerce Marketing",             metric: false },
+  { text: "Product Image Editing",            metric: false },
 ];
 
 export function Hero() {
+  const items = [...marqueeItems, ...marqueeItems];
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden pt-20">
@@ -164,36 +172,27 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Bold stats bar */}
-      <div className="border-t border-border/40 bg-card/40">
-        <div className="overflow-x-auto scrollbar-none">
-          <div className="flex items-center min-w-max px-6 md:px-12 py-5 gap-0">
-
-            {/* Sparkle icon */}
-            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 shrink-0 mr-6">
-              <Sparkles className="w-6 h-6 text-primary" />
-            </div>
-
-            {/* Divider */}
-            <div className="w-px h-12 bg-border/50 shrink-0 mr-6" />
-
-            {/* Stats */}
-            {heroStats.map((stat, i) => (
-              <div key={i} className="flex items-stretch">
-                <div className="flex flex-col justify-center px-6 md:px-8">
-                  <span className="text-3xl md:text-4xl font-black text-foreground leading-none tracking-tight">
-                    {stat.value}
-                  </span>
-                  <span className="text-[11px] text-muted-foreground mt-1.5 whitespace-nowrap font-medium">
-                    {stat.label}
-                  </span>
-                </div>
-                {i < heroStats.length - 1 && (
-                  <div className="w-px bg-border/40 shrink-0 self-stretch mx-1" />
-                )}
-              </div>
-            ))}
-          </div>
+      {/* Scrolling keyword marquee */}
+      <div className="relative border-t border-border/30 py-5 overflow-hidden">
+        <div className="absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-28 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+        <div className="marquee-track flex items-center gap-0 w-max">
+          {items.map((item, i) => (
+            <span key={i} className="flex items-center">
+              {item.metric ? (
+                <span className="whitespace-nowrap px-5 text-xs font-bold tracking-wide text-primary/75">
+                  {item.text}
+                </span>
+              ) : (
+                <span className="whitespace-nowrap px-5 text-xs font-medium uppercase tracking-widest text-muted-foreground/40">
+                  {item.text}
+                </span>
+              )}
+              <span className={`text-[10px] ${item.metric ? "text-primary/40" : "text-border/60"}`}>
+                {item.metric ? "★" : "·"}
+              </span>
+            </span>
+          ))}
         </div>
       </div>
     </section>
