@@ -1,0 +1,85 @@
+Hãy chỉnh lại section “Giới thiệu / Về Lê Trọng Long” trên portfolio của tôi theo hướng tối giản, dễ đọc, hiện đại và chuyên nghiệp hơn.
+
+Mục tiêu:
+- Giảm độ dài phần mô tả bên trái
+- Giữ tone cá nhân, gần gũi, không quá cứng
+- Nội dung ngắn gọn hơn, recruiter có thể scan nhanh trong 5–10 giây
+- 4 card bên phải ngắn hơn, rõ ý hơn, không bị trùng nội dung
+- Giữ phong cách dark theme hiện tại
+- Không thay đổi layout tổng thể, chỉ tối ưu nội dung và trình bày
+
+Yêu cầu chỉnh sửa:
+
+1. Phần tiêu đề
+- Giữ structure hiện tại
+- Có thể đổi thành:
+  - badge nhỏ: “GIỚI THIỆU”
+  - heading lớn: “Về Lê Trọng Long”
+- Heading cần nổi bật, dễ đọc
+
+2. Phần mô tả bên trái
+Thay toàn bộ đoạn text dài hiện tại bằng 2 đoạn ngắn sau:
+
+Đoạn 1:
+“Mình là Digital Marketer với hơn 2 năm kinh nghiệm thực chiến trong SEO và digital marketing. Mình tập trung xây dựng hệ thống nội dung SEO, tối ưu on-page/off-page và phát triển topic cluster để mở rộng độ phủ từ khóa.”
+
+Đoạn 2:
+“Mình làm SEO dựa trên dữ liệu — phân tích search intent, theo dõi hiệu suất qua GA4 và Google Search Console để tối ưu chiến lược và cải thiện thứ hạng bền vững.”
+
+Yêu cầu hiển thị:
+- Chia thành 2 đoạn riêng
+- Mỗi đoạn có line-height thoáng
+- Chiều rộng text vừa phải để dễ đọc
+- Không để block text quá dài
+- Font size dễ đọc trên desktop và mobile
+
+3. Chỉnh lại 4 card bên phải
+Giữ nguyên 4 card, nhưng thay nội dung bằng phiên bản ngắn gọn hơn như sau:
+
+Card 1:
+Tiêu đề: “SEO kỹ thuật & nội dung”
+Mô tả: “Xây dựng topic cluster, tối ưu on-page và off-page. Triển khai nội dung theo semantic SEO để cải thiện thứ hạng và độ phủ từ khóa.”
+
+Card 2:
+Tiêu đề: “Phân tích & đo lường”
+Mô tả: “Theo dõi hiệu suất SEO bằng GA4 và Google Search Console, phân tích dữ liệu để tối ưu chiến lược và cải thiện hiệu quả traffic.”
+
+Card 3:
+Tiêu đề: “Thương mại điện tử”
+Mô tả: “Tối ưu gian hàng đa kênh (Shopee, TikTok Shop, Lazada), cải thiện hiển thị sản phẩm và hỗ trợ tăng tỷ lệ chuyển đổi.”
+
+Card 4:
+Tiêu đề: “Chiến lược nội dung”
+Mô tả: “Lập kế hoạch nội dung dựa trên từ khóa, search intent và hành trình người dùng để phát triển traffic bền vững.”
+
+4. Yêu cầu UI/UX
+- Giữ dark theme
+- Tăng khoảng cách giữa các đoạn text bên trái
+- Card bên phải gọn hơn, padding hợp lý
+- Tiêu đề card nổi bật hơn phần mô tả
+- Text mô tả trên card dễ đọc, không quá dài dòng
+- Border hoặc shadow card tinh tế
+- Khi hover card:
+  - sáng nhẹ hơn
+  - border nổi rõ hơn
+  - scale nhẹ khoảng 1.01–1.02
+- Hiệu ứng mượt, không quá phô
+
+5. Responsive
+- Trên mobile, text và card cần xuống hàng hợp lý
+- Không để text quá sát mép
+- Khoảng cách giữa các card phải đều
+- Heading không bị quá to trên màn hình nhỏ
+
+6. Lưu ý quan trọng
+- Không viết lại theo giọng quá “AI” hoặc quá corporate
+- Giữ cảm giác cá nhân, thực tế, đúng chất portfolio của một SEO/Digital Marketer trẻ
+- Ưu tiên sự rõ ràng, dễ scan, hiện đại
+- Không thay đổi cấu trúc section quá nhiều
+- Không thêm nội dung mới ngoài những nội dung đã cung cấp
+- Chỉ tối ưu copywriting và UI trình bày cho section này
+
+Sau khi chỉnh xong, hãy:
+- cập nhật lại JSX/HTML của section
+- tinh chỉnh className/Tailwind tương ứng
+- đảm bảo section nhìn gọn, sáng hơn, chuyên nghiệp hơn trên cả desktop và mobile
