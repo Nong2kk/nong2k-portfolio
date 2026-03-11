@@ -21,12 +21,12 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
-        <Experience />
         <Projects />
         <Nong2kCaseStudy />
         <SeoPlanningShowcase />
         <WebsiteBuild />
         <ShopeeShowcase />
+        <Experience />
         <Certifications />
         <Contact />
       </main>
