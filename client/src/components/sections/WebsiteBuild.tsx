@@ -1,5 +1,6 @@
 import { Monitor, Smartphone, CheckCircle2 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
+import desktopScreenshot from "@assets/Screenshot_2026-03-12_031447_1773260098847.png";
 
 const highlights = [
   "Responsive trên desktop và mobile",
@@ -20,74 +21,15 @@ function DesktopMockup() {
         </div>
         <div className="flex-1 mx-3 bg-[#2c2d3a] rounded-md px-3 py-1 flex items-center gap-2">
           <div className="w-2.5 h-2.5 rounded-full border border-white/20 shrink-0" />
-          <span className="text-[10px] text-white/30 truncate">https://nong2k.com</span>
+          <span className="text-[10px] text-white/30 truncate">https://kienxanharc.vn/du-an/</span>
         </div>
       </div>
-
-      {/* Website content simulation */}
-      <div className="bg-white">
-        {/* Nav */}
-        <div className="flex items-center justify-between px-6 py-3 bg-white border-b border-gray-100">
-          <div className="flex items-center gap-1.5">
-            <div className="w-5 h-5 rounded bg-emerald-500" />
-            <div className="w-16 h-2.5 rounded bg-gray-800" />
-          </div>
-          <div className="hidden sm:flex gap-5">
-            {[60, 48, 56, 52, 44].map((w, i) => (
-              <div key={i} className="h-2 rounded" style={{ width: w, backgroundColor: i === 0 ? "#10b981" : "#d1d5db" }} />
-            ))}
-          </div>
-          <div className="w-20 h-7 rounded-full bg-emerald-500" />
-        </div>
-
-        {/* Hero */}
-        <div className="px-6 py-8 bg-gradient-to-br from-emerald-50 to-white">
-          <div className="flex items-center gap-1.5 mb-3">
-            <div className="w-2 h-2 rounded-full bg-emerald-400" />
-            <div className="w-28 h-2 rounded bg-emerald-300" />
-          </div>
-          <div className="w-3/4 h-5 rounded bg-gray-800 mb-2" />
-          <div className="w-1/2 h-5 rounded bg-gray-800 mb-4" />
-          <div className="w-full h-2.5 rounded bg-gray-300 mb-2" />
-          <div className="w-5/6 h-2.5 rounded bg-gray-300 mb-2" />
-          <div className="w-4/6 h-2.5 rounded bg-gray-300 mb-5" />
-          <div className="flex gap-3">
-            <div className="w-24 h-8 rounded-full bg-emerald-500" />
-            <div className="w-24 h-8 rounded-full border border-gray-300" />
-          </div>
-        </div>
-
-        {/* Feature cards */}
-        <div className="px-6 py-5 bg-gray-50">
-          <div className="w-32 h-3 rounded bg-gray-700 mx-auto mb-4" />
-          <div className="grid grid-cols-3 gap-3">
-            {[0, 1, 2].map((i) => (
-              <div key={i} className="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
-                <div className="w-8 h-8 rounded-lg bg-emerald-100 mb-2.5" />
-                <div className="w-20 h-2.5 rounded bg-gray-700 mb-1.5" />
-                <div className="w-full h-2 rounded bg-gray-200 mb-1" />
-                <div className="w-4/5 h-2 rounded bg-gray-200" />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Content row */}
-        <div className="px-6 py-5 bg-white">
-          <div className="flex gap-4">
-            <div className="w-2/5 bg-emerald-50 rounded-xl h-24 flex items-center justify-center border border-emerald-100">
-              <div className="w-10 h-10 rounded-full bg-emerald-200" />
-            </div>
-            <div className="flex-1 pt-1 space-y-2">
-              <div className="w-2/3 h-3 rounded bg-gray-700" />
-              <div className="w-full h-2 rounded bg-gray-200" />
-              <div className="w-5/6 h-2 rounded bg-gray-200" />
-              <div className="w-4/6 h-2 rounded bg-gray-200" />
-              <div className="w-20 h-6 rounded-full bg-emerald-500 mt-2" />
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Real screenshot */}
+      <img
+        src={desktopScreenshot}
+        alt="Giao diện Desktop – kienxanharc.vn"
+        className="w-full block object-cover object-top"
+      />
     </div>
   );
 }
