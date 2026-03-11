@@ -31,7 +31,7 @@ export function Footer() {
         </div>
 
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Lê Trọng Long. Bảo lưu mọi quyền.
+          © {new Date().getFullYear()} Nong2k.com — Designed & Built by Nong.
         </p>
       </div>
     </footer>
