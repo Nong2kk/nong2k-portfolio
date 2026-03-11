@@ -6,6 +6,7 @@ import { Skills } from "@/components/sections/Skills";
 import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Nong2kCaseStudy } from "@/components/sections/Nong2kCaseStudy";
+import { WebsiteBuild } from "@/components/sections/WebsiteBuild";
 import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <Nong2kCaseStudy />
+        <WebsiteBuild />
         <Certifications />
         <Contact />
       </main>
