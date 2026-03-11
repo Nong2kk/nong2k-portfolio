@@ -6,6 +6,7 @@ import { Skills } from "@/components/sections/Skills";
 import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Nong2kCaseStudy } from "@/components/sections/Nong2kCaseStudy";
+import { SeoPlanningShowcase } from "@/components/sections/SeoPlanningShowcase";
 import { WebsiteBuild } from "@/components/sections/WebsiteBuild";
 import { ShopeeShowcase } from "@/components/sections/ShopeeShowcase";
 import { Certifications } from "@/components/sections/Certifications";
@@ -23,6 +24,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <Nong2kCaseStudy />
+        <SeoPlanningShowcase />
         <WebsiteBuild />
         <ShopeeShowcase />
         <Certifications />
