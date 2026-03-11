@@ -149,11 +149,13 @@ export function Hero() {
                   Xem dự án <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
-                  href="#contact"
-                  data-testid="link-contact"
+                  href="https://www.canva.com/design/DAGbBDFhAic/rb4bjN56A5SNH5vbL43jxg/view?utm_content=DAGbBDFhAic&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5569f850cf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="link-cv"
                   className="inline-flex items-center px-6 py-3 rounded-xl font-semibold text-sm border border-border hover:border-primary/50 hover:bg-primary/5 text-foreground transition-all duration-300"
                 >
-                  Liên hệ tuyển dụng
+                  Tham khảo CV
                 </a>
               </div>
             </Reveal>
