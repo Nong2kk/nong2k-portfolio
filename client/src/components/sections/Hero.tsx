@@ -1,7 +1,7 @@
 import { ArrowRight, Star } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import { motion } from "framer-motion";
-import profileImg from "@assets/z7578573372551_7c2e369ce65478f1c3dee5f69293672f_1773251487672.jpg";
+import profileImg from "@assets/Thiết_kế_chưa_có_tên_(8)_1773257641180.png";
 
 const stats = [
   { value: "2+", label: "Years Experience" },
@@ -82,7 +82,7 @@ export function Hero() {
                     src={profileImg}
                     alt="Lê Trọng Long – SEO & Digital Marketing Specialist"
                     className="w-full h-full object-cover"
-                    style={{ objectPosition: "center 40%" }}
+                    style={{ objectPosition: "center 30%" }}
                   />
                 </div>
               </div>
