@@ -7,6 +7,7 @@ import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Nong2kCaseStudy } from "@/components/sections/Nong2kCaseStudy";
 import { WebsiteBuild } from "@/components/sections/WebsiteBuild";
+import { ShopeeShowcase } from "@/components/sections/ShopeeShowcase";
 import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <Projects />
         <Nong2kCaseStudy />
         <WebsiteBuild />
+        <ShopeeShowcase />
         <Certifications />
         <Contact />
       </main>
