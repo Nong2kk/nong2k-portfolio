@@ -8,7 +8,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
-import companyLogo from "@assets/Thiết_kế_chưa_có_tên_(7)_1773172173267.png";
 import gscPerformance from "@assets/Screenshot_2026-03-11_040807_1773178047749.png";
 import performanceOverview from "@assets/Screenshot_2026-03-11_040441_1773176713667.png";
 import aiOverviewImg from "@assets/image_1773179527780.png";
@@ -19,7 +18,6 @@ import aiOverviewImg from "@assets/image_1773179527780.png";
    Recommended size: 1200×675px (16:9)
 ────────────────────────────────────────────────── */
 const images = {
-  logo:                companyLogo as string | null,
   performanceOverview: performanceOverview as string | null,
   semrushData:         null as string | null,  // Optional SEMrush screenshot
   gscPerformance:      gscPerformance as string | null,
@@ -108,54 +106,6 @@ export function Nong2kCaseStudy() {
             <p className="text-muted-foreground text-base max-w-xl mx-auto">
               SEO Case Study: Organic Growth Strategy
             </p>
-          </div>
-        </Reveal>
-
-        {/* ── Block 1: Company Overview ── */}
-        <Reveal delay={0.1}>
-          <div className="glass-card rounded-3xl p-8 md:p-10 border border-border/40">
-            <SectionBadge color="from-[#60A5FA] to-primary">Company Overview</SectionBadge>
-
-            <div className="grid md:grid-cols-[180px_1fr] gap-8 items-start mt-7">
-              {/* Logo */}
-              <div data-testid="company-logo">
-                {images.logo ? (
-                  <div className="w-full rounded-2xl bg-white p-5 flex items-center justify-center shadow-sm">
-                    <img
-                      src={images.logo}
-                      alt="Hoàng Long Vũ – Company Logo"
-                      className="w-full h-auto object-contain max-h-20"
-                    />
-                  </div>
-                ) : (
-                  <div className="w-full h-24 rounded-2xl border-2 border-dashed border-border/50 flex flex-col items-center justify-center gap-2 bg-card/30 text-muted-foreground/50">
-                    <FileImage className="w-7 h-7" />
-                    <p className="text-xs font-medium">Company Logo</p>
-                  </div>
-                )}
-              </div>
-
-              {/* Description */}
-              <div className="space-y-3">
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">CÔNG TY</p>
-                  <h3 className="text-xl font-bold text-foreground">Vi Na Hoàng Long Vũ</h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
-                  Vi Na Hoàng Long Vũ là doanh nghiệp thương mại thiết bị công nghiệp, chuyên cung cấp máy móc, dụng cụ điện cầm tay và vật tư tiêu hao chính hãng từ các thương hiệu lớn như Bosch, Makita, Milwaukee, Dewalt.
-                </p>
-                <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
-                  Dự án tập trung vào cải thiện khả năng hiển thị tự nhiên, nâng cao thứ hạng từ khóa và xây dựng cấu trúc nội dung SEO có khả năng mở rộng để hỗ trợ tăng trưởng kỹ thuật số dài hạn.
-                </p>
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {["On-page SEO", "Content Strategy", "Topic Cluster", "Technical SEO", "Keyword Research"].map((tag) => (
-                    <span key={tag} className="px-2.5 py-1 rounded-lg text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </Reveal>
 
