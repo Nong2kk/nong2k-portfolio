@@ -1,7 +1,7 @@
 import { ArrowRight, Star } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import { motion } from "framer-motion";
-import profileImg from "@assets/IMG_8936_1773006924508.PNG";
+import profileImg from "@assets/z7578573372551_7c2e369ce65478f1c3dee5f69293672f_1773251487672.jpg";
 
 const stats = [
   { value: "2+", label: "Years Experience" },
