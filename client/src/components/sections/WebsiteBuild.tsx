@@ -1,6 +1,7 @@
 import { Monitor, Smartphone, CheckCircle2 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
 import desktopScreenshot from "@assets/Screenshot_2026-03-12_031447_1773260098847.png";
+import mobileScreenshot from "@assets/Screenshot_2026-03-12_031824_1773260311252.png";
 
 const highlights = [
   "Responsive trên desktop và mobile",
@@ -42,58 +43,12 @@ function MobileMockup() {
         {/* Top notch */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-[#2a2b38] rounded-b-2xl z-10" />
         {/* Screen */}
-        <div className="rounded-[1.6rem] overflow-hidden bg-white">
-          {/* Status bar */}
-          <div className="flex justify-between items-center px-4 pt-6 pb-1 bg-white">
-            <span className="text-[8px] font-bold text-gray-800">9:41</span>
-            <div className="flex gap-1 items-center">
-              <div className="w-3 h-1.5 rounded-sm bg-gray-800" />
-              <div className="w-1.5 h-1.5 rounded-full bg-gray-800" />
-            </div>
-          </div>
-
-          {/* Mobile nav */}
-          <div className="flex justify-between items-center px-3 py-2 border-b border-gray-100">
-            <div className="flex items-center gap-1">
-              <div className="w-4 h-4 rounded bg-emerald-500" />
-              <div className="w-12 h-2 rounded bg-gray-700" />
-            </div>
-            <div className="space-y-1">
-              <div className="w-4 h-0.5 rounded bg-gray-400" />
-              <div className="w-4 h-0.5 rounded bg-gray-400" />
-              <div className="w-4 h-0.5 rounded bg-gray-400" />
-            </div>
-          </div>
-
-          {/* Hero mobile */}
-          <div className="px-3 py-4 bg-gradient-to-b from-emerald-50 to-white">
-            <div className="w-2/3 h-3 rounded bg-gray-800 mb-1.5" />
-            <div className="w-1/2 h-3 rounded bg-gray-800 mb-3" />
-            <div className="w-full h-1.5 rounded bg-gray-300 mb-1" />
-            <div className="w-5/6 h-1.5 rounded bg-gray-300 mb-3" />
-            <div className="w-full h-7 rounded-full bg-emerald-500 mb-2" />
-            <div className="w-full h-7 rounded-full border border-gray-300" />
-          </div>
-
-          {/* Mobile cards */}
-          <div className="px-3 py-3 bg-gray-50 space-y-2">
-            {[0, 1, 2].map((i) => (
-              <div key={i} className="bg-white rounded-lg p-2.5 border border-gray-100 shadow-sm flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-emerald-100 shrink-0" />
-                <div className="flex-1 space-y-1">
-                  <div className="w-3/4 h-1.5 rounded bg-gray-700" />
-                  <div className="w-full h-1.5 rounded bg-gray-200" />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom bar */}
-          <div className="px-3 py-2 bg-white flex justify-around border-t border-gray-100">
-            {[36, 28, 32, 24].map((w, i) => (
-              <div key={i} className="h-1.5 rounded" style={{ width: w, backgroundColor: i === 0 ? "#10b981" : "#e5e7eb" }} />
-            ))}
-          </div>
+        <div className="rounded-[1.6rem] overflow-hidden">
+          <img
+            src={mobileScreenshot}
+            alt="Giao diện Mobile – kienxanharc.vn"
+            className="w-full block object-cover object-top"
+          />
         </div>
         {/* Home indicator */}
         <div className="flex justify-center py-2">
