@@ -1,7 +1,13 @@
 import { CheckCircle2, Monitor, Smartphone, ShoppingBag } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
+import { ClickableImage } from "../ui/Lightbox";
 import shopeeDesktop from "@assets/Screenshot_2026-03-12_032226_1773260948999.png";
 import shopeeMobile from "@assets/z7611331042505_54b7b8d9721c672669a5848a66bd5ce4_1773261392221.jpg";
+
+const shopeeGroup = [
+  { src: shopeeDesktop as string, alt: "Shopee store desktop – Hoàng Long Vũ" },
+  { src: shopeeMobile as string,  alt: "Shopee store mobile – Hoàng Long Vũ" },
+];
 
 const bullets = [
   "Đồng bộ và chuẩn hóa danh mục sản phẩm",
@@ -61,10 +67,12 @@ export function ShopeeShowcase() {
                   </div>
                 </div>
                 <div className="relative mx-4 mb-4">
-                  <img
+                  <ClickableImage
                     src={shopeeDesktop}
                     alt="Shopee store desktop – Hoàng Long Vũ"
                     className="w-full block object-cover object-top rounded-b-lg max-h-[380px]"
+                    group={shopeeGroup}
+                    groupIndex={0}
                   />
                   <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-card/70 to-transparent rounded-b-lg pointer-events-none" />
                 </div>
@@ -86,10 +94,12 @@ export function ShopeeShowcase() {
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-4 bg-[#2a2b38] rounded-b-2xl z-10" />
                     {/* Screen */}
                     <div className="rounded-[1.5rem] overflow-hidden">
-                      <img
+                      <ClickableImage
                         src={shopeeMobile}
                         alt="Shopee store mobile – Hoàng Long Vũ"
                         className="w-full block object-cover object-top"
+                        group={shopeeGroup}
+                        groupIndex={1}
                       />
                     </div>
                     {/* Home indicator */}

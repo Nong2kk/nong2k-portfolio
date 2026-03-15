@@ -1,7 +1,13 @@
 import { CheckCircle2, BarChart2, CalendarDays } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
+import { ClickableImage } from "../ui/Lightbox";
 import rankingSheet from "@assets/Screenshot_2026-03-12_034354_1773262131125.png";
 import planSheet from "@assets/Screenshot_2026-03-12_034722_1773262135084.png";
+
+const seoPlanningGroup = [
+  { src: planSheet as string,    alt: "Kế hoạch SEO Quý 4 – Hoàng Long Vũ" },
+  { src: rankingSheet as string, alt: "Keyword ranking tracking sheet – Hoàng Long Vũ" },
+];
 
 const bullets = [
   "Lập kế hoạch SEO theo quý và theo nhóm sản phẩm",
@@ -15,11 +21,13 @@ function SheetCard({
   alt,
   label,
   icon: Icon,
+  groupIndex,
 }: {
   src: string;
   alt: string;
   label: string;
   icon: React.ComponentType<{ className?: string }>;
+  groupIndex: number;
 }) {
   return (
     <div className="flex-1 min-w-0 flex flex-col gap-2">
@@ -30,10 +38,12 @@ function SheetCard({
         </span>
       </div>
       <div className="rounded-2xl overflow-hidden border border-border/50 shadow-lg shadow-black/30">
-        <img
+        <ClickableImage
           src={src}
           alt={alt}
           className="w-full block object-cover object-top"
+          group={seoPlanningGroup}
+          groupIndex={groupIndex}
         />
       </div>
     </div>
@@ -73,12 +83,14 @@ export function SeoPlanningShowcase() {
                 alt="Kế hoạch SEO Quý 4 – Hoàng Long Vũ"
                 label="Quarter SEO Plan"
                 icon={CalendarDays}
+                groupIndex={0}
               />
               <SheetCard
                 src={rankingSheet}
                 alt="Keyword ranking tracking sheet – Hoàng Long Vũ"
                 label="Keyword Ranking Tracker"
                 icon={BarChart2}
+                groupIndex={1}
               />
             </div>
 

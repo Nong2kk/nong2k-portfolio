@@ -8,9 +8,16 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
+import { ClickableImage } from "../ui/Lightbox";
 import gscPerformance from "@assets/Screenshot_2026-03-11_040807_1773178047749.png";
 import performanceOverview from "@assets/Screenshot_2026-03-11_040441_1773176713667.png";
 import aiOverviewImg from "@assets/image_1773179527780.png";
+
+const caseStudyGroup = [
+  { src: performanceOverview as string, alt: "SEO Performance Overview – Hoàng Long Vũ" },
+  { src: aiOverviewImg as string,       alt: "Google AI Overview – Hoàng Long Vũ" },
+  { src: gscPerformance as string,      alt: "Google Search Console – Performance Comparison" },
+];
 
 /* ──────────────────────────────────────────────────
    To add a real screenshot: import the file and assign it below.
@@ -125,7 +132,7 @@ export function Nong2kCaseStudy() {
             {/* Main screenshot */}
             <div data-testid="performance-screenshot">
               {images.performanceOverview
-                ? <img src={images.performanceOverview} alt="SEO Performance Overview" className="w-full rounded-2xl shadow-lg" />
+                ? <ClickableImage src={images.performanceOverview} alt="SEO Performance Overview" className="w-full rounded-2xl shadow-lg" group={caseStudyGroup} groupIndex={0} />
                 : <ImagePlaceholder label="SEO Performance Dashboard" hint="Ảnh chụp tổng quan hiệu suất (GA4, GSC, hoặc SEMrush)" tall />}
             </div>
 
@@ -195,7 +202,7 @@ export function Nong2kCaseStudy() {
             {/* Screenshot */}
             <div data-testid="ai-overview-screenshot">
               {images.aiOverview
-                ? <img src={images.aiOverview} alt="Google AI Overview – Hoàng Long Vũ" className="w-full rounded-2xl shadow-lg border border-border/30" />
+                ? <ClickableImage src={images.aiOverview} alt="Google AI Overview – Hoàng Long Vũ" className="w-full rounded-2xl shadow-lg border border-border/30" group={caseStudyGroup} groupIndex={1} />
                 : <ImagePlaceholder label="Google AI Overview Screenshot" hint="Ảnh chụp AI Overview trên Google Search" />}
             </div>
 
@@ -254,7 +261,7 @@ export function Nong2kCaseStudy() {
             {/* Single full-width screenshot */}
             <div data-testid="gsc-screenshot">
               {images.gscPerformance
-                ? <img src={images.gscPerformance} alt="Google Search Console – Performance Comparison" className="w-full rounded-2xl shadow-lg border border-border/20" />
+                ? <ClickableImage src={images.gscPerformance} alt="Google Search Console – Performance Comparison" className="w-full rounded-2xl shadow-lg border border-border/20" group={caseStudyGroup} groupIndex={2} />
                 : <ImagePlaceholder label="GSC Performance Graph" hint="Biểu đồ tổng quan (clicks, impressions, CTR, position)" tall />}
             </div>
 

@@ -1,0 +1,61 @@
+Improve the UX/UI of the portfolio so recruiters can click images and view them in detail.
+
+Problem:
+Currently the images in the portfolio are static and cannot be clicked to view larger versions. This makes the portfolio less interactive and less useful for recruiters.
+
+Goal:
+Make all important portfolio images clickable and easy to inspect in detail.
+
+Requirements:
+1. Add image preview / lightbox functionality
+- When a user clicks on any project image, certificate image, case study image, or portfolio screenshot, open it in a clean modal/lightbox
+- Show the image in a much larger view
+- Dark overlay background
+- Smooth fade/scale animation
+- Close button in the top-right corner
+- Allow closing by clicking outside the image
+- Allow closing with ESC key
+
+2. Improve recruiter-friendly image browsing
+- Support next / previous navigation for image groups
+- Add left/right arrows inside the modal
+- Show current image index if there are multiple images
+- Keep the interaction simple and elegant
+
+3. Improve image affordance
+- Add hover effect so users know images are clickable
+- Slight zoom on hover
+- Subtle glow or border highlight on hover
+- Cursor should become pointer
+- Optionally show a small “Xem chi tiết” overlay on hover
+
+4. Preserve current design
+- Keep the existing dark premium design
+- Do not redesign the whole page
+- Keep the current layout, spacing, and section structure
+- Only enhance the image experience and recruiter usability
+
+5. Apply to relevant sections
+Please make this work for:
+- project images
+- case study images
+- certificate images
+- portfolio screenshots
+- any other showcase image cards on the site
+
+6. Mobile friendly
+- Modal must work well on mobile
+- Image should scale nicely
+- Navigation should still be usable on smaller screens
+
+Technical preference:
+- Use React state for modal/lightbox
+- Reusable lightbox component preferred
+- Clean and maintainable implementation
+- Keep animations smooth and minimal
+
+Important:
+Do not remove any existing content.
+Do not change text content.
+Do not rebuild the whole design.
+Only improve image interaction and add detailed image viewing.

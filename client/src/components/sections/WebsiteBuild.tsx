@@ -1,7 +1,13 @@
 import { Monitor, Smartphone, CheckCircle2 } from "lucide-react";
 import { Reveal } from "../ui/Reveal";
+import { ClickableImage } from "../ui/Lightbox";
 import desktopScreenshot from "@assets/Screenshot_2026-03-12_031447_1773260098847.png";
 import mobileScreenshot from "@assets/Screenshot_2026-03-12_031824_1773260311252.png";
+
+const websiteGroup = [
+  { src: desktopScreenshot as string, alt: "Giao diện Desktop – kienxanharc.vn" },
+  { src: mobileScreenshot as string,  alt: "Giao diện Mobile – kienxanharc.vn" },
+];
 
 const highlights = [
   "Responsive trên desktop và mobile",
@@ -26,10 +32,12 @@ function DesktopMockup() {
         </div>
       </div>
       {/* Real screenshot */}
-      <img
+      <ClickableImage
         src={desktopScreenshot}
         alt="Giao diện Desktop – kienxanharc.vn"
         className="w-full block object-cover object-top"
+        group={websiteGroup}
+        groupIndex={0}
       />
     </div>
   );
@@ -44,10 +52,12 @@ function MobileMockup() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-[#2a2b38] rounded-b-2xl z-10" />
         {/* Screen */}
         <div className="rounded-[1.6rem] overflow-hidden">
-          <img
+          <ClickableImage
             src={mobileScreenshot}
             alt="Giao diện Mobile – kienxanharc.vn"
             className="w-full block object-cover object-top"
+            group={websiteGroup}
+            groupIndex={1}
           />
         </div>
         {/* Home indicator */}
