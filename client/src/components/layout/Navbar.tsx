@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import logoImg from "@assets/ChatGPT_Image_06_38_41_9_thg_3,_2026_1773013229639.png";
 
 const navItems = [
-  { label: "Giới thiệu", href: "#about" },
   { label: "Kỹ năng", href: "#skills" },
   { label: "Kinh nghiệm", href: "#experience" },
   { label: "Dự án", href: "#projects" },
