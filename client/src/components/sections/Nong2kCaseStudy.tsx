@@ -44,7 +44,7 @@ const semrushMetrics = [
     icon: <Award className="w-5 h-5" />,
     title: "Authority Score",
     value: "14",
-    desc: "Cải thiện thông qua tối ưu nội dung và xây dựng liên kết",
+    desc: "Tối ưu SEO và xây dựng liên kết",
     color: "from-[#60A5FA] to-secondary",
   },
   {
