@@ -1,16 +1,17 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Send, Loader2, Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import { z } from "zod";
 import { Reveal } from "../ui/Reveal";
-import { useCreateMessage } from "@/hooks/use-messages";
+import { Recaptcha, type RecaptchaHandle } from "../ui/Recaptcha";
+import { useContactSubmit } from "@/hooks/use-contact-submit";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Vui lòng nhập họ tên"),
-  email: z.string().email("Địa chỉ email không hợp lệ"),
-  phone: z.string().optional(),
-  message: z.string().min(10, "Tin nhắn cần ít nhất 10 ký tự"),
+  name: z.string().trim().min(2, "Vui lòng nhập họ tên"),
+  email: z.string().trim().email("Địa chỉ email không hợp lệ"),
+  phone: z.string().trim().optional(),
+  message: z.string().trim().min(10, "Tin nhắn cần ít nhất 10 ký tự"),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -43,21 +44,40 @@ const contactInfo = [
 ];
 
 export function Contact() {
-  const { mutate: sendMessage, isPending } = useCreateMessage();
+  const { mutate: sendMessage, isPending } = useContactSubmit({ fallbackEmail: contactInfo[0].value });
   const [isSuccess, setIsSuccess] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaError, setCaptchaError] = useState(false);
+  const recaptchaRef = useRef<RecaptchaHandle>(null);
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
   });
 
+  const handleCaptchaChange = (token: string | null) => {
+    setCaptchaToken(token);
+    if (token) setCaptchaError(false);
+  };
+
   const onSubmit = (data: FormValues) => {
-    sendMessage(data, {
+    if (!captchaToken) {
+      setCaptchaError(true);
+      return;
+    }
+
+    sendMessage({ ...data, captchaToken }, {
       onSuccess: () => {
         setIsSuccess(true);
         reset();
         setTimeout(() => setIsSuccess(false), 5000);
-      }
+      },
+      // The token is single-use: always get a fresh one after an attempt.
+      onSettled: () => recaptchaRef.current?.reset(),
     });
+  };
+
+  const onInvalid = () => {
+    if (!captchaToken) setCaptchaError(true);
   };
 
   return (
@@ -123,7 +143,7 @@ export function Contact() {
               <h3 className="text-xl font-bold text-foreground mb-2 font-display">Gửi tin nhắn cho mình</h3>
               <p className="text-sm text-muted-foreground mb-7">Điền thông tin bên dưới, mình sẽ phản hồi sớm nhất có thể.</p>
 
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+              <form onSubmit={handleSubmit(onSubmit, onInvalid)} className="space-y-5">
                 <div className="grid md:grid-cols-2 gap-5">
                   <div className="space-y-1.5">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">Họ và tên</label>
@@ -174,6 +194,15 @@ export function Contact() {
                     placeholder="Xin chào Long, mình muốn trao đổi với bạn về vị trí Digital Marketing / SEO..."
                   />
                   {errors.message && <p className="text-xs text-destructive mt-1">{errors.message.message}</p>}
+                </div>
+
+                <div className="space-y-1.5">
+                  <Recaptcha
+                    ref={recaptchaRef}
+                    siteKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY as string | undefined}
+                    onChange={handleCaptchaChange}
+                  />
+                  {captchaError && <p className="text-xs text-destructive mt-1">Vui lòng xác minh CAPTCHA trước khi gửi.</p>}
                 </div>
 
                 <button
